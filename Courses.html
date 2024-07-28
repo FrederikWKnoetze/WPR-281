@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVERVIEW OF THE WWW</title>
+    <link rel="stylesheet" href="stylingMain.css" type="text/css">
+    <link rel="shortcut icon" href="Media/Icon.jpg" type="image/x-icon" />
+   
+</head>
+<body>
+    <div id="Main"><!-- Div for entire site -->
+        <div id="Header"><!-- Div for header -->
+            <!-- <img src="Icon.jpg" alt="ff" title="ff" class="icon"> -->
+            <div id="H-Title" class="H-">
+                <h1>OVERVIEW OF THE WWW</h1>
+            </div>
+            <div id="H-Right" class="H-">
+                <nav id="H-Nav">
+                    <ul>
+                        <li class="H-li" id="homeButton"><a href="index.html">Home</a></li>
+                        <li class="H-li"><a href="Topic1.html">Overview of the World Wide Web</a></li>
+                        <li class="H-li"><a href="Topic2.html">History of the internet</a></li>
+                        <li class="H-li"><a href="Topic3.html">WWW vs the Internet</a></li>
+                        <li class="H-li"><a href="Topic4.html">Evolution of the internet</a></li>
+                        <li class="H-li"><a href="Topic5.html">Internet protocols</a></li>
+                        <li class="H-li"><a href="Topic6.html">Web Application Architecture</a></li>
+                        <li class="H-li"><a href="Topic7.html">Client-side and server-side engineering</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="Body"><!-- Div for body -->
+            <div id="B-Main" class="B-">
+                <p>
+                    <dl>
+                        <u><b><dt id="descriptiveList">The origin</dt></b></u>
+                        <dd>
+                            The World Wide Web was created for the same reason many things are…
+                            Because someone smart got annoyed with tedious repetitive work.
+                            "I found it frustrating that in those days, there was different information on different computers, but you had to log on to different computers to get at it ... So, finding out how things worked was really difficult," - Berners-Lee, Tim (USA TODAY, 2019)
+                            <br>
+                            Thus, in 1989 he proposed a "universal linked information system" while working at CERN (The European Organization for Nuclear Research)
+                        </dd>
+                        <u><b><dt id="descriptiveList">Important concepts presented in his proposal.</dt></b></u>
+                        <br>
+
+                            <dd> <dt class="point">Hypertext</dt>
+                                    <dd>The term "hypertext" describes a ground-breaking idea in which documents are linked together by clickable text, enabling users to move beyond linear boundaries and access information in a dynamic, associative way. This architecture changed how information is organized and accessed online and served as the foundation for the World Wide Web.</dd>
+                                </dd>
+                                <br>
+                        <dd><dt class="point">URL</dt>
+                        <dd>With URLs internet resources are uniquely identified and located using web addresses. Users have an easy way to specify the location of documents, photos, videos, and other content thanks to URLs.</dd>
+                        </dd>
+
+                        <br>
+                        <dd><dt class="point">HTML</dt>
+                        <dd>A tool that permitted tag-based content organization. A mechanism to define headings, paragraphs, lists, links, and other elements on a web page was made available by HTML. It enabled content producers to structure documents and organize information.</dd>
+                        </dd>
+                        <br>
+                        <dd><dt class="point">HTTP</dt>
+                        <dd>Using the HTTP protocol, data can be sent back and forth between servers and clients (such web browsers). Accessing files stored on various servers throughout the internet is made possible by HTTP, which gives users' web browsers the ability to request and retrieve web pages.</dd>
+                        </dd>
+                        <br>
+                        <dd><dt class="point">Client-Server Model</dt>
+                            <dd>In the proposal, the idea of client-server architecture was established, in which clients (web browsers) ask servers (web servers) for resources. Users might obtain retrieve and modify documents from distant servers using the model.</dd>  
+                            <br>
+                            <dd><dt class="point">Interconnected Network of Information </dt>
+                                <dd>The proposal's primary goal was to build a network of connected information that users and scholars could access and make contributions to. This connection allowed for smooth collaboration and knowledge sharing because it was not geographically or electronically constrained. </dd>
+                             </dd>
+                               
+                               
+                             <br>
+                               
+                         <dd><dt class="point">Decentralization</dt>
+                              <dd>In Berners-Lee's concept, decentralization was given prominence, with no single entity in charge of the network. The information would instead be spread out among various servers and locations, offering accessibility, and resilience.</dd>
+                              </dd>
+
+                              <br>
+
+                              <dd><dt class="point">Openness and Accessibility</dt>
+                                <dd>Berner-Lee wanted this to be available for everyone. So that everyone may contribute to and exchange information as they please. </dd>
+                             </dd>
+                             <br>
+                             <u><b><dt id="descriptiveList">How it works in 18 points</dt></b></u>
+                             <dd>The W3 works by combination of technology and protocol, below I will give an 18 point version of how exactly it works.</dd>
+
+                             <br>
+                             <dd><dt class="point">Client-Server Model</dt>
+                                <dd>The WWW is run using client-server technology. Clients (often web browsers) request and display web content, while servers store and transmit it.</dd>
+                                </dd>
+                                <br>
+                                <dd><dt class="point">URL</dt>
+                                    <dd>To identify and find resources on the internet, a URL is used and is a structured address. Each component in a URL serves a specific function in describing the location of a resource. Here is a more thorough explanation of what makes up a URL:</dd>
+                                    <ol type="I">
+                                        <li>Scheme or Protocol
+                                          <p>The scheme or protocol specifies the procedure to follow in order to access the resource. Plans typically consist of:</p>
+                                          <ul>
+                                            <li>http: - Hypertext Transfer Protocol (unencrypted)</li>
+                                            <li>https: - Hypertext Transfer Protocol Secure (encrypted)</li>
+                                            <li>ftp: - File Transfer Protocol</li>
+                                            <li>mailto: - Email address (for sending emails)</li>
+                                            <li>tel: - Telephone number (for initiating phone calls)</li>
+                                            <li>file: - Local file system resource (e.g., file:///path/to/file)</li>
+                                          </ul>
+                                        </li>
+                                        <li>Domain Name or Hostname
+                                          <p>The domain name, sometimes referred to as the hostname, of the resource identifies the server or computer where it is stored. A domain name that may be read by others, such as "www.example.com," or an IP address, such as "192.168.1.1," are both acceptable. Although "www" frequently precedes the domain name, it is not needed.</p>
+                                        </li>
+                                        <li>Port (Optional)
+                                          <p>After the domain name, you can add a port number, separated by a colon (for instance: 8080). Different services on the same server can be distinguished by their ports. Without a port number, the scheme's default (for instance, 80 for HTTP and 443 for HTTPS) is utilized.</p>
+                                        </li>
+                                        <li>Path
+                                          <p>The path identifies the precise location of the resource on the server. Its hierarchical structure typically mirrors how server-side folders and files are arranged. For instance, the path in the URL https://www.example.com/products/laptops contains the words "products" and "laptops".</p>
+                                        </li>
+                                        <li>Subdomain
+                                          <p>A subdomain is a smaller domain name that is part of a larger domain name inside the DNS order. It is used to group and categorize various website services or elements under a single domain. Following the main domain are various subdomains, which are separated by periods (dots).</p>
+                                        </li>
+                                        <li>TLD
+                                          <p>A TLD, refers to the highest level of the hierarchical Domain Name System (DNS) structure used on the internet. It comes after the last dot in a web address and is the final segment of a domain name. Domain names are grouped and categorized using TLDs into many subgroups or categories. TLDs essentially fall into two groups:
+                                            <ol type="a">
+                                                <li>gTLDs</li>
+                                               
+                                                <p>gTLDs are the most widely used. They have no ties to any particular country or region. Well-known gTLDs include, for instance:</p> 
+                                                  <ul>
+                                                    <li>.com: It was first created for business firms, despite the fact that it is now extensively used for a variety of purposes.</li>
+                                                    <li>.org: Typically, non-profit groups utilize it.</li>
+                                                    <li>.net: Has been adopted extensively by numerous organizations, but is now utilized primarily for network infrastructure.</li>
+                                                    <li>.info: Used by information websites.</li>
+                                                    <li>.gov: Used by government entities.</li>
+                                                    <li>.edu: Used for educational institutions.</li>
+                                                  </ul>
+                                                
+                                              </ol>
+                                              <br>
+                                              <ol type="a" start="2">
+                                                <li>ccTLDs
+                                                    <p>ccTLDs are two-letter domain extensions that belong to specific countries or areas. For example:</p></li>                                                                                         
+                                                    
+                                                  <ul>
+                                                    <li>.uk: United Kingdom</li>
+                                                    <li>.ca: Canada</li>
+                                                    <li>.jp: Japan</li>
+                                                    <li>.au: Australia</li>
+                                                    <li>.de: Germany</li>
+                                                  </ul>
+                                               
+                                              </ol>
+                                              
+                                          </p>
+                                        </li>
+                                      </ol>
+                                      
+                                
+                                
+                                </dd>
+                                <br>
+                                <dd><dt class="point">DNS</dt>
+                                    <dd>When you enter a URL, your web browser sends a DNS request to translate the human-readable domain name into the IP address required to locate the web server.</dd>
+                                    </dd>
+                                    <br>
+                                    <dd><dt class="point">HTTP/HTTPS Protocols</dt>
+                                        <dd>Web content is requested and sent between the client and the server via the HTTP  and HTTPS communication protocols. HTTPS encrypts data in order to safeguard it</dd>
+                                        </dd>
+                                        <br>
+                                        <dd><dt class="point">Request-Response Cycle</dt>
+                                            <dd>When you type a URL and press Enter, your browser sends an HTTP request to the web server specified in the URL.
+                                                The server responds with an HTTP response after processing the request, which often includes HTML, CSS, JavaScript, and other components
+                                                </dd>
+                                            </dd>
+
+                                            <br>
+                                            <dd><dt class="point">HTML and Hyperlinks</dt>
+                                                <dd>HTML is a text formatting and organization language used for websites. There are hyperlinks items that, when clicked, direct users to other web pages on it.</dd>
+                                                </dd>
+                                                <br>
+
+                                                <dd><dt class="point">Web Servers</dt>
+                                                    <dd>Website files are stored on web servers, which are specialized computers or software programs that make them available to clients upon request.</dd>
+                                                    </dd>
+
+                                                    <br>
+                                                    <dd><dt class="point">Web Browsers</dt>
+                                                        <dd>Web browsers are software applications that translate HTML and other web standards to show web content in an understandable manner.</dd>
+                                                        </dd>
+
+                                                        <br>
+                                                        <dd><dt class="point">Caching</dt>
+                                                            <dd>Browsers and web servers frequently employ caching as a method of temporarily storing copies of web resources. As a result, fewer requests need to be made repeatedly, and web pages load faster.</dd>
+                                                            </dd>
+
+                                                            <br>
+                                                            <dd><dt class="point">Cookies and Sessions</dt>
+                                                                <dd>The server sends cookies, which are little data packets, to the client's device for storage. They carry out a range of actions, such as monitoring user behaviour and preserving user sessions.</dd>
+                                                                </dd> </dl>
+                                                                <br>
+                                                                <dd><dt class="point">Web Standards</dt>
+                                                                    <dd>The World Wide Web is supported by a number of web standards and technologies, such as CSS (Cascading Style Sheets) regarding design, JavaScript regarding interactive features, and responsive design for device compatibility.</dd>
+                                                                    </dd> </dl>
+                                                                    <br>
+                                                                    <dd><dt class="point">Search Engines</dt>
+                                                                        <dd>Web pages are indexed by search engines like Google and Bing in order to assist users in finding what they are looking for. To navigate and organize web pages, they deploy web crawlers.</dd>
+                                                                        </dd> </dl>
+                                                                        <br>
+                                                                        <dd><dt class="point">CDNs</dt>
+                                                                            <dd>Cache editions of online materials are kept close to users via networks of distributed servers known as CDNs. They reduce the burden on the server and accelerate web page processing.</dd>
+                                                                            </dd> </dl>
+                                                                            <br>
+                                                                            <dd><dt class="point">Web Hosting</dt>
+                                                                                <dd>Web servers, which can be run by private persons, companies, or website hosting providers, are where websites remain. Hosting companies have an assortment of options that cater to various requirements.</dd>
+                                                                                </dd> </dl>
+                                                                                <br>
+                                                                                <dd><dt class="point">Security Measures</dt>
+                                                                                    <dd>Safety precautions like SSL/TLS encryption, firewalls, and procedures for authentication have become vital for protecting data transit and user privacy online.</dd>
+                                                                                    </dd> </dl>
+                                                                                    <br>
+                                                                                    <dd><dt class="point">Web Development</dt>
+                                                                                        <dd>Backend programming languages like PHP, Python, or Node.js as well as technologies like HTML, CSS, and JavaScript are used to create web pages, apps, and products and services.</dd>
+                                                                                        </dd> </dl>
+                                                                                        <br>
+                                                                                        <dd><dt class="point">Web Standards Organizations</dt>
+                                                                                            <dd>To ensure browser and web technology compatibility, groups like the World Wide Web Consortium (W3C) develop and update web-related standards.</dd>
+                                                                                            </dd> </dl>
+<br>
+                                                                                            <dd><dt class="point">Evolution and Innovation</dt>
+                                                                                                <dd>New technologies like WebAssembly and Progressive Web Apps (PWAs) are driving the potential of the web to new extremes.</dd>
+                                                                                                </dd> </dl>
+
+                                                                                                
+                    
+                </p>
+            </div>
+            <div id="B-R-Top" class="B-">
+                <p>
+                    <dl>
+                        <b><dt>Hypertext:</dt></b>
+                        <dd>
+                            Digital text that contains hyperlinks to other texts.
+                        </dd>
+                        <b><dt>URL:</dt></b>
+                        <dd>
+                            Uniform Resource Locator. 
+                        </dd>
+                        <b><dt>HTML:</dt></b>
+                        <dd>
+                            Hypertext Markup Language.
+                        </dd>
+                        <b><dt>HTTP:</dt></b>
+                        <dd>
+                            Hypertext Transfer Protocol. 
+                        </dd>
+                        <b><dt>TLD:</dt></b>
+                        <dd>
+                            Top Level Domain 
+                        </dd>
+                        <b><dt>gTLD:</dt></b>
+                        <dd>
+                            Generic Top-Level Domains  
+                        </dd>
+                        <b><dt>ccTLD:</dt></b>
+                        <dd>
+                            Country Code Top-Level Domains 
+                        </dd>
+                        <b><dt>DNS:</dt></b>
+                        <dd>
+                            Domain Name System
+                        </dd>
+                        <b><dt>CDNs:</dt></b>
+                        <dd>
+                            Content Delivery Networks
+                        </dd>
+                        <b><dt>SSL/TLS:</dt></b>
+                        <dd>
+                            Secure Sockets Layer/Transport Layer Security -Cryptographic protocols that provide secure communication over a computer network
+                        </dd>
+                    </dl>
+                </p>
+            </div>
+            <div id="B-R-Bottem" class="B-">
+                <p><img src="Media/Screenshot (32).png" alt="ClientServerDiagram" title="ClientServerDiagram" width="100px"></p>
+            </div>
+        </div>
+        <div id="Footer"><!-- Div for footer -->
+            <div id="F-Left" class="F-">
+                <dl>
+                    <b><dt>Sources</dt></b>
+                    <dd><a href="https://www.statista.com/statistics/617136/digital-population-worldwide/">https://www.statista.com/statistics/617136/digital-population-worldwide/</a></dd>
+                    <dd><a href="https://www.history.com/topics/inventions/invention-of-the-internet">https://www.history.com/topics/inventions/invention-of-the-internet</a></dd>
+                </dl>
+                <p></p>
+                
+                
+              
+            </div>
+            <div id="F-Middel" class="F-">
+                <p>&copy;Copyright Reserved. 2023</p>
+                <p>2023</p>
+            </div>
+            <div id="F-Right" class="F-">
+                <dl>
+                    <b><dt>Contact us</dt></b>
+                    <dd>Phone - 021 913 6578</dd>
+                    <dd>Fax - 021 913 6578</dd>
+                    <dd>Email - InternetHistorySociety@gmail.com</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
