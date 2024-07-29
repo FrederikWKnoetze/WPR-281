@@ -24,13 +24,13 @@ body {
 
 #H-Title{
   grid-column: 1/13 ;
-  grid-row: 1/5;
+  grid-row: 1/4;
   background-color: red;
 }
 /*Heading Tile id most Starting with H means its in heading */
 #H-Search{
   grid-column: 1/13 ;
-  grid-row: 5/9;
+  grid-row: 4/7;
   background-color: green;
 }
 #H-S-Input{
@@ -41,23 +41,23 @@ body {
 }
 #B-Course{
   grid-column: 1/13 ;
-  grid-row: 9/22;
+  grid-row: 7/25;
   background-color: blue;
   display: grid;
   margin: 0;
   padding: 0;
   border: 0;
   grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(9,1fr);
+  grid-template-rows: repeat(20,1fr);
 }
 #B-C-Top{
   grid-column: 1/13 ;
-  grid-row: 1/3;
+  grid-row: 1/4;
   background-color: lightblue;
 }
 #B-C-Left{
-  grid-column: 1/5 ;
-  grid-row: 3/10;
+  grid-column: 1/3 ;
+  grid-row: 4/21;
   display: grid;
   margin: 0;
   padding: 0;
@@ -81,19 +81,19 @@ body {
   background-color: aquamarine;
 }
 #B-C-Mid{
-  grid-column: 5/9 ;
-  grid-row: 3/10;
+  grid-column: 3/8 ;
+  grid-row: 4/21;
   background-color: lightcyan;
 }
 #B-C-Right{
-  grid-column: 9/13 ;
-  grid-row: 3/10;
+  grid-column: 8/13 ;
+  grid-row: 4/21;
   background-color: darkblue;
 }
 
 #F-Info{
   grid-column: 1/13 ;
-  grid-row: 22/25;
+  grid-row: 25/25;
   background-color: white;
 }
 .csgrid{
