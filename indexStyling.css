@@ -36,6 +36,12 @@ body {
   grid-column: 1/13 ;
   grid-row: 9/22;
   background-color: blue;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(9,1fr);
 }
 #F-Info{
   grid-column: 1/13 ;
@@ -46,13 +52,17 @@ body {
   height: 100%;
   width: 100%;
 }
-
-#T-Title{
+/*Heading Tile id most Starting with H means its in heading */
+#H-Title{
   
 }
-#S-Input{
+#H-Search{
   
 }
-#S-Button{
+#H-S-Input{
+  
+}
+#H-S-Button{
 
 }
+
