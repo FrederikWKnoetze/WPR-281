@@ -4,7 +4,7 @@ html{
   border: 0;
   height: 100%;
   width: 100%;
-  overflow: -moz-hidden-unscrollable;
+  overflow: hidden;
 }
 body {
   margin: 0;
