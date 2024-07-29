@@ -1,0 +1,48 @@
+html{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+  overflow: -moz-hidden-unscrollable;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+#grids{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(24,1fr);
+}
+
+#H-Title{
+  grid-column: 1/13 ;
+  grid-row: 1/5;
+  background-color: red;
+}
+#H-Search{
+  grid-column: 1/13 ;
+  grid-row: 5/9;
+  background-color: green;
+}
+#B-Course{
+  grid-column: 1/13 ;
+  grid-row: 9/22;
+  background-color: blue;
+}
+#F-Info{
+  grid-column: 1/13 ;
+  grid-row: 22/25;
+  background-color: white;
+}
+.csgrid{
+  height: 100%;
+  width: 100%;
+}
