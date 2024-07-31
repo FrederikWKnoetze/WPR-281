@@ -20,75 +20,96 @@ body {
   border: 0;
   grid-template-columns: repeat(12,1fr);
   grid-template-rows: repeat(24,1fr);
+  background-image: url(Media/MainBackround.jpeg);
+  background-size: cover;
 }
+
+
 
 #H-Title{
   grid-column: 1/13 ;
   grid-row: 1/4;
-  background-color: red;
+ /* background-color: red;*/
+ height: 100%;
+ width: 100%;
+ justify-content: center;
+ align-content: center;
+ background-color: rgb(88, 88, 88);
+
+}
+#H-T-Title{
+  height: auto;
+  width: auto;
+  
+  color: white;
+  padding: auto;
+  text-align: center;
+  margin: 0;
+  font-size: 400%;
 }
 /*Heading Tile id most Starting with H means its in heading */
 #H-Search{
   grid-column: 1/13 ;
   grid-row: 4/7;
-  background-color: green;
+ /* background-color: green;*/
+ align-content: center;
+ justify-content: center;
+ 
 }
 #H-S-Input{
+
   
+    margin: 0;
+  margin-left: 42%;
+  padding: 0;
+  border: 0;
+  width: 20vw;
+  height: 3vw;
+  
+
 }
+/*
+  */
 #H-S-Button{
+    margin: 0;
+  align-self: right;
+  padding: 0;
+  border: 0;
+  width: 5vw;
+  height: 3vw;
+  
 
 }
 #B-Course{
   grid-column: 1/13 ;
   grid-row: 7/25;
-  background-color: blue;
+  /*background-color: blue;*/
+
   display: grid;
   margin: 0;
   padding: 0;
   border: 0;
-  grid-template-columns: repeat(12,1fr);
+  grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(20,1fr);
 }
-#B-C-Top{
-  grid-column: 1/13 ;
-  grid-row: 1/4;
-  background-color: lightblue;
-}
 #B-C-Left{
-  grid-column: 1/3 ;
-  grid-row: 4/21;
-  display: grid;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(9,1fr);
+  grid-column: 1/2 ;
+  grid-row: 1/21;   
+  background-color: lightblue;
+  height: 80%;
+  width: 80%;
+  align-self: center;
+  justify-self: center;
 }
-#B-C-L-Top{
-  grid-column: 1/13 ;
-  grid-row: 1/4;
-  background-color: darkcyan;
-}
-#B-C-L-Mid{
-  grid-column: 1/13;
-  grid-row: 4/7;
-  background-color: aqua;
-}
-#B-C-L-Bot{
-  grid-column: 1/13 ;
-  grid-row: 7/10;
-  background-color: aquamarine;
-}
-#B-C-Mid{
-  grid-column: 3/8 ;
-  grid-row: 4/21;
-  background-color: lightcyan;
-}
+
 #B-C-Right{
-  grid-column: 8/13 ;
-  grid-row: 4/21;
+  grid-column: 2/3 ;
+  grid-row: 1/21;
   background-color: darkblue;
+  height: 80%;
+  width: 80%;
+  align-self: center;
+  justify-self: center;
 }
 
 #F-Info{
