@@ -134,14 +134,14 @@
                     <div class="form-row justify-content-center">
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="padding: 30px 20px;" required>
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="padding: 30px 20px;" required pattern="[A-Za-z\s]+" minlength="2" maxlength="35">
                             </div>
                         </div>
                     </div>
                     <div class="form-row justify-content-center">
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Your Surname" style="padding: 30px 20px;" required>
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Surname" style="padding: 30px 20px;" required pattern="[A-Za-z\s]+" minlength="2" maxlength="35">
                             </div>
                         </div>
                     </div>
@@ -155,14 +155,14 @@
                     <div class="form-row justify-content-center">
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <input type="tel" class="form-control bg-light border-0" placeholder="Your Phone Number" style="padding: 30px 20px;" required>
+                                <input type="tel" class="form-control bg-light border-0" placeholder="Your Phone Number" style="padding: 30px 20px;" required pattern="\+?\d{10,}">
                             </div>
                         </div>
                     </div>
                     <div class="form-row justify-content-center">
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Your Address" style="padding: 30px 20px;" required>
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Address" style="padding: 30px 20px;" required minlength="4" maxlength="40">
                             </div>
                         </div>
                     </div>
