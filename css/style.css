@@ -226,6 +226,49 @@ label {
 button {
   border-radius: 0;
 }
+.accordion {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+
+.accordion-header {
+  background-color: #007bff;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.accordion-content {
+  padding: 0 15px;
+  display: none;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.accordion-content th, .accordion-content td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.accordion-content th {
+  background-color: #f9f9f9;
+}
 
 button:focus {
   outline: 1px dotted;
