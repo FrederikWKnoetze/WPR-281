@@ -144,15 +144,15 @@
 
                             Overall, Night Sorceries offer a unique and strategic approach to combat in Elden Ring, providing players with tools to outmaneuver and surprise their enemies</p>
                     </div>
-
                     <h2 class="mb-3" style="text-align: center;">Course Modules</h2>
                     <div class="accordion">
                         <div class="accordion-item">
                             <button class="accordion-header" onclick="toggleAccordion(this)">Module 1</button>
                             <div class="accordion-content">
                                 <br>
-                                <h5>Ancient Death Rancor</h5><br>
+                                <h5 id="module13">Ancient Death Rancor</h5><br>
                                 <p>Summons a horde of vengeful spirits that chase down foes. Charging enhances potency.They are cinders of the ancient death hex, raked from the fires of ghostflame by Deathbirds.</p>
+                                <button class="Complete-Button" onclick="completeModule('module13')">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -161,8 +161,9 @@
                             <button class="accordion-header" onclick="toggleAccordion(this)">Module 2</button>
                             <div class="accordion-content">
                                 <br>
-                                <h5>Explosive Ghostflame</h5><br>
+                                <h5 id="module14">Explosive Ghostflame</h5><br>
                                 <p>Sorcery of the servants of Death. Strike the ground with the staff, triggering an explosion of ghostflame that burns the surrounding area. In the time when there was no Erdtree, death was burned in ghostflame. Deathbirds were the keepers of that fire.</p>
+                                <button class="Complete-Button" onclick="completeModule('module14')">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -171,8 +172,9 @@
                             <button class="accordion-header" onclick="toggleAccordion(this)">Module 3</button>
                             <div class="accordion-content">
                                 <br>
-                                <h5>Fia's Mist</h5><br>
+                                <h5 id="module15">Fia's Mist</h5><br>
                                 <p>Sorcery of Fia, the Deathbed Companion. Creates a deathly mist before the caster, which inflicts Death blight upon those who enter. This sorcery can be cast while in motion. Charging enhances range of the mist. This sorcery was developed to oppose the Roundtable Hold, and is effective only against the Tarnished.</p>
+                                <button class="Complete-Button" onclick="completeModule('module15')">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -181,8 +183,9 @@
                             <button class="accordion-header" onclick="toggleAccordion(this)">Module 4</button>
                             <div class="accordion-content">
                                 <br>
-                                <h5>Rancorcall</h5><br>
+                                <h5 id="module16">Rancorcall</h5><br>
                                 <p>Sorcery of the servants of Death. Summons vengeful spirits that chase down foes. Charging enhances potency. Once thought lost, this ancient death hex was rediscovered by the necromancer Garris. </p>
+                                <button class="Complete-Button" onclick="completeModule('module16')">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -191,8 +194,9 @@
                             <button class="accordion-header" onclick="toggleAccordion(this)">Module 5</button>
                             <div class="accordion-content">
                                 <br>
-                                <h5>Tibia's Summons</h5><br>
+                                <h5 id="module17">Tibia's Summons</h5><br>
                                 <p>Sorcery of the servants of Death. Summons a group of Those Lost in Death. Three skeletons will appear some distance from the caster and attack foes before disappearing. The dead have long been left to wander; what they need is leadership.</p>
+                                <button class="Complete-Button" onclick="completeModule('module17')">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -201,8 +205,9 @@
                             <button class="accordion-header" onclick="toggleAccordion(this)">Module 6</button>
                             <div class="accordion-content">
                                 <br>
-                                <h5>Mass of Putrescence</h5><br>
+                                <h5 id="module18">Mass of Putrescence</h5><br>
                                 <p>Sorcery originating from the putrid liquor of the stone coffins. Flings a great mass of putrescence that bathes its landing area in ghostflame. Charging increases potency. In an age long past, Death was burned by ghostflame. Even the remains of tainted flesh were given equal treatment in death.</p>
+                                <button class="Complete-Button" onclick="completeModule('module18')">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -211,8 +216,9 @@
                             <button class="accordion-header" onclick="toggleAccordion(this)">Module 7</button>
                             <div class="accordion-content">
                                 <br>
-                                <h5>Rings of Spectral Light</h5><br>
+                                <h5 id="module19">Rings of Spectral Light</h5><br>
                                 <p>Sorcery practiced by the keepers of the spiritgraves, where all death ultimately drifts. Creates rings of spectral light that fire in unison. Charging enhances potency. The rings of light have the same qualities as ghostflame, and deal magic damage while also causing frost buildup.</p>
+                                <button class="Complete-Button" onclick="completeModule('module19')">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -221,8 +227,9 @@
                             <button class="accordion-header" onclick="toggleAccordion(this)">Module 8</button>
                             <div class="accordion-content">
                                 <br>
-                                <h5>Vortex of Putrescence</h5><br>
+                                <h5 id="module20">Vortex of Putrescence</h5><br>
                                 <p>Sorcery used by the Putrescent Knight. Launches a whirl of putrescent jets that bathe the surroundings of all they touch in ghostflame. In an age long past, Death was burned by ghostflame. Even the remains of tainted flesh were given equal treatment in death.</p>
+                                <button class="Complete-Button" onclick="completeModule('module20')">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -259,6 +266,10 @@
                         <div class="py-3 px-4">
                             <a class="btn btn-block btn-secondary py-3 px-5" href="enroll.html">Enroll Now</a>
                         </div>
+                    </div>
+                    <div class="mb-5">
+                        <h2 class="mb-4">Completed Courses:</h2>
+                        <ul id="completedModulesList"></ul>
                     </div>
                 </div>
             </div>
