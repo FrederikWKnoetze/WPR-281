@@ -1,3 +1,12 @@
+function toggleAccordion(element) {
+    const content = element.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
+}//content block displays elemens when the block is clicked
+
 (function ($) {
     "use strict";
     
@@ -342,6 +351,7 @@ function temCourse(ftitle,fcode,fduration,fdescription,fdetails,fmodules,flectur
     this.completed=fcompleted;
 }
 
+
 function storeUserData(){
 const form = document.querySelector('form')
 
@@ -371,3 +381,4 @@ function displayUserData(){
     document.getElementById('result').innerHTML = markup
 
 }
+
