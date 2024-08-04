@@ -259,7 +259,7 @@ function updateCountdown() {
     const secondsNight =Math.floor(totaleSecondsNight%60);
     console.log(`${daysNight} days,${hoursNight} hours,${minutesNight} minutes,${secondsNight} seconds, `);
     var timeelNight = document.getElementById("time-night");
-    timeelNight.innerHTML=`${daysNight} days,${hoursNight} hours,${minutesNight} minutes,${secondsNight} seconds, `;
+    timeelNight.innerHTML=`${daysNight} days ${hoursNight} hours ${minutesNight} minutes ${secondsNight} seconds `;
     totaleSecondsNight--;
     if (totaleSecondsNight<0) {
         console.log("countdown has ended")
@@ -272,7 +272,7 @@ function updateCountdown() {
     const secondsCaria =Math.floor(totaleSecondsCaria%60);
     console.log(`${daysCaria} days,${hoursCaria} hours,${minutesCaria} minutes,${secondsCaria} seconds, `);
     var timeelCaria = document.getElementById("time-carian");
-    timeelCaria.innerHTML=`${daysCaria} days,${hoursCaria} hours,${minutesCaria} minutes,${secondsCaria} seconds, `;
+    timeelCaria.innerHTML=`${daysCaria} days ${hoursCaria} hours ${minutesCaria} minutes ${secondsCaria} seconds  `;
     totaleSecondsCaria--;
     if (totaleSecondsCaria<0) {
         console.log("countdown has ended")
@@ -285,7 +285,7 @@ function updateCountdown() {
     const secondsCold =Math.floor(totaleSecondsCold%60);
     console.log(`${daysCold} days,${hoursCold} hours,${minutesCold} minutes,${secondsCold} seconds, `);
     var timeelCold = document.getElementById("time-cold");
-    timeelCold.innerHTML=`${daysCold} days,${hoursCold} hours,${minutesCold} minutes,${secondsCold} seconds, `;
+    timeelCold.innerHTML=`${daysCold} days ${hoursCold} hours ${minutesCold} minutes ${secondsCold} seconds  `;
     totaleSecondsCold--;
     if (totaleSecondsCold<0) {
         console.log("countdown has ended")
@@ -298,7 +298,7 @@ function updateCountdown() {
     const secondsGlint =Math.floor(totaleSecondsGlint%60);
     console.log(`${daysGlint} days,${hoursGlint} hours,${minutesGlint} minutes,${secondsGlint} seconds, `);
     var timeelGlint = document.getElementById("time-glint");
-    timeelGlint.innerHTML=`${daysGlint} days,${hoursGlint} hours,${minutesGlint} minutes,${secondsGlint} seconds, `;
+    timeelGlint.innerHTML=`${daysGlint} days ${hoursGlint} hours ${minutesGlint} minutes ${secondsGlint} seconds  `;
     totaleSecondsGlint--;
     if (totaleSecondsGlint<0) {
         console.log("countdown has ended")
@@ -311,7 +311,7 @@ function updateCountdown() {
     const secondsGrav =Math.floor(totaleSecondsGrav%60);
     console.log(`${daysGrav} days,${hoursGrav} hours,${minutesGrav} minutes,${secondsGrav} seconds, `);
     var timeelGrav = document.getElementById("time-gravity");
-    timeelGrav.innerHTML=`${daysGrav} days,${hoursGrav} hours,${minutesGrav} minutes,${secondsGrav} seconds, `;
+    timeelGrav.innerHTML=`${daysGrav} days ${hoursGrav} hours ${minutesGrav} minutes ${secondsGrav} seconds  `;
     totaleSecondsGrav--;
     if (totaleSecondsGrav<0) {
         console.log("countdown has ended")
@@ -324,7 +324,7 @@ function updateCountdown() {
     const secondsCrystal =Math.floor(totaleSecondsCrystal%60);
     console.log(`${daysCrystal} days,${hoursCrystal} hours,${minutesCrystal} minutes,${secondsCrystal} seconds, `);
     var timeelCrystal = document.getElementById("time-crystal");
-    timeelCrystal.innerHTML=`${daysCrystal} days,${hoursCrystal} hours,${minutesCrystal} minutes,${secondsCrystal} seconds, `;
+    timeelCrystal.innerHTML=`${daysCrystal} days ${hoursCrystal} hours ${minutesCrystal} minutes ${secondsCrystal} seconds  `;
     totaleSecondsCrystal--;
     if (totaleSecondsCrystal<0) {
         console.log("countdown has ended")
