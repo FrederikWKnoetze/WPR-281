@@ -315,7 +315,8 @@ function updateCountdown() {
     if (totaleSecondsCrystal<0) {
         console.log("countdown has ended")
         timeel.innerHTML=`This Course Has Started`;
-
+    }
+}
 
 document.getElementById('searchButton').addEventListener('click',searchcourse);
 
