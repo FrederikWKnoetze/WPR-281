@@ -28,7 +28,7 @@
     <link rel="icon" href="img/favicon.webp" type="image/x-icon">
 </head>
 
-<body onload="displayUserData()">
+<body>
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark">
         <div class="row py-2 px-lg-5">
@@ -41,19 +41,19 @@
             </div>
             <div class="col-lg-6 text-center text-lg-right">
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-2" href="">
+                    <a class="text-white px-2" href="https://eldenring.wiki.fextralife.com/Raya+Lucaria+Academy">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a class="text-white px-2" href="">
+                    <a class="text-white px-2" href="https://eldenring.wiki.fextralife.com/Raya+Lucaria+Academy">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a class="text-white px-2" href="">
+                    <a class="text-white px-2" href="https://eldenring.wiki.fextralife.com/Raya+Lucaria+Academy">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a class="text-white px-2" href="">
+                    <a class="text-white px-2" href="https://eldenring.wiki.fextralife.com/Raya+Lucaria+Academy">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="text-white pl-2" href="">
+                    <a class="text-white pl-2" href="https://eldenring.wiki.fextralife.com/Raya+Lucaria+Academy">
                         <i class="fab fa-youtube"></i>
                     </a>
                 </div>
@@ -75,13 +75,15 @@
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mx-auto py-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
+
+                    <a href="enroll.html" class="nav-item nav-link active">Enroll</a>
+
                     <a href="course.html" class="nav-item nav-link">Courses</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Student Portal</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Student Portal</a>
                         <div class="dropdown-menu m-0">
-                            <a href="feature.html" class="dropdown-item active">Courses</a>
-                            <a href="completed.html" class="dropdown-item">Completed Courses</a>
+                            <a href="studentCourses.html" class="dropdown-item active">Courses</a>
+                            <a href="detail.html" class="dropdown-item">Completed Courses</a>
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -96,11 +98,11 @@
     <!-- Header Start -->
     <div class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom" style="margin-bottom: 90px;">
         <div class="container text-center py-5">
-            <h1 class="text-white display-1">Courses</h1>
+            <h1 class="text-white display-1">Enroll</h1>
             <div class="d-inline-flex text-white mb-5">
-                <p class="m-0 text-uppercase"><a class="text-white" href="">Student Portal</a></p>
+                <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
                 <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                <p class="m-0 text-uppercase">Courses</p>
+                <p class="m-0 text-uppercase">Enroll</p>
             </div>
             <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
                 <div class="input-group">
@@ -108,9 +110,12 @@
                         <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Courses</button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Courses 1</a>
-                            <a class="dropdown-item" href="#">Courses 2</a>
-                            <a class="dropdown-item" href="#">Courses 3</a>
+                            <a class="dropdown-item" href="#">Carian Sorceries</a>
+                            <a class="dropdown-item" href="#">Glintstone Sorceries</a>
+                            <a class="dropdown-item" href="#">Night Sorceries</a>
+                            <a class="dropdown-item" href="#">Cold Sorceries</a>
+                            <a class="dropdown-item" href="#">Gravity Sorceries</a>
+                            <a class="dropdown-item" href="#">Crystalian Sorceries</a>
                         </div>
                     </div>
                     <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
@@ -123,102 +128,118 @@
     </div>
     <!-- Header End -->
 
+      <!-- Feature Start -->
+      <div class="row justify-content-center bg-image mx-0 mb-5">
+        <div class="col-lg-6 py-5">
+            <div class="bg-white p-5 my-5">
+                <h1 class="text-center mb-4">Sign Up And Become A Student Now!</h1>
+                <form>
+                    <div class="form-row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="padding: 30px 20px;" required pattern="[A-Za-z\s]+" minlength="2" maxlength="35">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Surname" style="padding: 30px 20px;" required pattern="[A-Za-z\s]+" minlength="2" maxlength="35">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="padding: 30px 20px;" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <input type="tel" class="form-control bg-light border-0" placeholder="Your Phone Number" style="padding: 30px 20px;" required pattern="\+?\d{10,}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Address" style="padding: 30px 20px;" required minlength="4" maxlength="40">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <select class="custom-select bg-light border-0 px-3" style="height: 60px;" required>
+                                    <option value="" disabled selected>Select a course</option>
+                                    <option value="1">Carian Sorceries</option>
+                                    <option value="2">Glintstone Sorceries</option>
+                                    <option value="3">Night Sorceries</option>
+                                    <option value="4">Cold Sorceries</option>
+                                    <option value="5">Gravity Sorceries</option>
+                                    <option value="6">Crystalian Sorceries</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="col-sm-8">
+                            <button class="btn btn-primary btn-block" type="submit" style="height: 60px;" onclick="storeUserData()">Sign Up Now</button><!-- onlicks function should take you to courses for countdown after validations-->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-    <!-- Courses Start -->
+    <!-- Feature Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
-            <div class="row mx-0 justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center position-relative mb-5">
-                        <div id="result"></div>
-                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Courses</h6>
-                        <h1 class="display-4">Your Courses:</h1>
+            <div class="row">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Why Choose Us?</h6>
+                        <h1 class="display-4">Why You Should Start Learning with Us?</h1>
+                    </div>
+                    <p class="mb-4 pb-2">Studying at Raya Lucaria offers prestigious reputation and renowned faculty, providing state-of-the-art facilities and extensive library resources. Students benefit from cutting-edge research opportunities and a diverse student body, while enjoying vibrant campus life and beautiful architecture. With access to industry leaders, internships, scholarships, and financial aid, the collaborative environment supports comprehensive academic programs and personalized advising. Raya Lucaria fosters a supportive community with interdisciplinary studies, global partnerships, and study abroad programs. Innovative teaching methods, career counseling, and practical skills emphasis prepare students for success. Advanced laboratories, active student organizations, cultural events, sports facilities, and on-campus housing enhance the experience. Accessible faculty, mentorship programs, and networking opportunities, combined with an industry-relevant curriculum and cutting-edge technology, encourage critical thinking and leadership development. Independent study opportunities round out the rich educational experience at Raya Lucaria.</p>
+                    <div class="d-flex mb-3">
+                        <div class="btn-icon bg-primary mr-4">
+                            <i class="fa fa-2x fa-graduation-cap text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>Skilled Instructors</h4>
+                            <p>Raya Lucaria's skilled instructors are experts in their fields, dedicated to innovative teaching, fostering critical thinking, and providing personalized mentorship, ensuring students excel academically and professionally in a supportive environment.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="btn-icon bg-secondary mr-4">
+                            <i class="fa fa-2x fa-certificate text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>International Certificate</h4>
+                            <p>Raya Lucaria offers international certificates, enhancing global recognition, boosting career prospects, and validating specialized skills and knowledge globally.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="btn-icon bg-warning mr-4">
+                            <i class="fa fa-2x fa-book-reader text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>Online Classes</h4>
+                            <p class="m-0">Raya Lucaria's online classes offer flexibility, access to top-tier instructors, interactive learning experiences, and comprehensive resources, allowing students to balance studies with personal commitments while achieving their academic goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/feature.jpg" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 pb-4">
-                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="night.html">
-                        <img class="img-fluid" src="img/courses-1.jpg" alt="">
-                        <div class="courses-text">
-                            <h4 class="text-center text-white px-3">Night Sorcery</h4>
-                            <div class="border-top w-100 mt-3">
-                                <div class="d-flex justify-content-between p-4">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-4">
-                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="carian.html">
-                        <img class="img-fluid" src="img/courses-2.jpg" alt="">
-                        <div class="courses-text">
-                            <h4 class="text-center text-white px-3">Carian Sorcery</h4>
-                            <div class="border-top w-100 mt-3">
-                                <div class="d-flex justify-content-between p-4">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-4">
-                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="cold.html">
-                        <img class="img-fluid" src="img/courses-3.jpg" alt="">
-                        <div class="courses-text">
-                            <h4 class="text-center text-white px-3">Cold Sorcery</h4>
-                            <div class="border-top w-100 mt-3">
-                                <div class="d-flex justify-content-between p-4">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-4">
-                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="glintstone.html">
-                        <img class="img-fluid" src="img/courses-4.jpg" alt="">
-                        <div class="courses-text">
-                            <h4 class="text-center text-white px-3">Glintstone Sorcery</h4>
-                            <div class="border-top w-100 mt-3">
-                                <div class="d-flex justify-content-between p-4">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-4">
-                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="gravity.html">
-                        <img class="img-fluid" src="img/courses-5.jpg" alt="">
-                        <div class="courses-text">
-                            <h4 class="text-center text-white px-3">Gravity Sorcery</h4>
-                            <div class="border-top w-100 mt-3">
-                                <div class="d-flex justify-content-between p-4">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-4">
-                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="crystalian.html">
-                        <img class="img-fluid" src="img/courses-6.jpg" alt="">
-                        <div class="courses-text">
-                            <h4 class="text-center text-white px-3">Crystalian Sorcery</h4>
-                            <div class="border-top w-100 mt-3">
-                                <div class="d-flex justify-content-between p-4">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                
-                </div>
         </div>
     </div>
-    <!-- Courses End -->
-
 
   <!-- Footer Start -->
   <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
