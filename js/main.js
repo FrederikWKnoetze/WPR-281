@@ -235,6 +235,88 @@ var courseGlintstone=new temCourse("Glintstone Scorecery","0002","72 Days","Glin
 arrcourses.push(courseGlintstone);
 
 
+//This is the function to update it every second
+//
+function updateCountdown() {
+    //this is just a copy paste with name changes each time to update the time
+    const daysNight = Math.floor(totaleSecondsNight/86400);
+    const hoursNight = Math.floor(totaleSecondsNight/3600)%24;
+    const minutesNight =Math.floor(totaleSecondsNight/60)%60;
+    const secondsNight =Math.floor(totaleSecondsNight%60);
+    console.log(`${daysNight} days,${hoursNight} hours,${minutesNight} minutes,${secondsNight} seconds, `);
+    var timeelNight = document.getElementById("time-night");
+    timeelNight.innerHTML=`${daysNight} days ${hoursNight} hours ${minutesNight} minutes ${secondsNight} seconds `;
+    totaleSecondsNight--;
+    if (totaleSecondsNight<0) {
+        console.log("countdown has ended")
+        timeelNight.innerHTML=`This Course Has Started`;
+
+    }
+    const daysCaria = Math.floor(totaleSecondsCaria/86400);
+    const hoursCaria = Math.floor(totaleSecondsCaria/3600)%24;
+    const minutesCaria =Math.floor(totaleSecondsCaria/60)%60;
+    const secondsCaria =Math.floor(totaleSecondsCaria%60);
+    console.log(`${daysCaria} days,${hoursCaria} hours,${minutesCaria} minutes,${secondsCaria} seconds, `);
+    var timeelCaria = document.getElementById("time-carian");
+    timeelCaria.innerHTML=`${daysCaria} days ${hoursCaria} hours ${minutesCaria} minutes ${secondsCaria} seconds  `;
+    totaleSecondsCaria--;
+    if (totaleSecondsCaria<0) {
+        console.log("countdown has ended")
+        timeelCaria.innerHTML=`This Course Has Started`;
+
+    }
+    const daysCold = Math.floor(totaleSecondsCold/86400);
+    const hoursCold = Math.floor(totaleSecondsCold/3600)%24;
+    const minutesCold =Math.floor(totaleSecondsCold/60)%60;
+    const secondsCold =Math.floor(totaleSecondsCold%60);
+    console.log(`${daysCold} days,${hoursCold} hours,${minutesCold} minutes,${secondsCold} seconds, `);
+    var timeelCold = document.getElementById("time-cold");
+    timeelCold.innerHTML=`${daysCold} days ${hoursCold} hours ${minutesCold} minutes ${secondsCold} seconds  `;
+    totaleSecondsCold--;
+    if (totaleSecondsCold<0) {
+        console.log("countdown has ended")
+        timeelCold.innerHTML=`This Course Has Started`;
+
+    }
+    const daysGlint = Math.floor(totaleSecondsGlint/86400);
+    const hoursGlint = Math.floor(totaleSecondsGlint/3600)%24;
+    const minutesGlint =Math.floor(totaleSecondsGlint/60)%60;
+    const secondsGlint =Math.floor(totaleSecondsGlint%60);
+    console.log(`${daysGlint} days,${hoursGlint} hours,${minutesGlint} minutes,${secondsGlint} seconds, `);
+    var timeelGlint = document.getElementById("time-glint");
+    timeelGlint.innerHTML=`${daysGlint} days ${hoursGlint} hours ${minutesGlint} minutes ${secondsGlint} seconds  `;
+    totaleSecondsGlint--;
+    if (totaleSecondsGlint<0) {
+        console.log("countdown has ended")
+        timeelGlint.innerHTML=`This Course Has Started`;
+
+    }
+    const daysGrav = Math.floor(totaleSecondsGrav/86400);
+    const hoursGrav = Math.floor(totaleSecondsGrav/3600)%24;
+    const minutesGrav =Math.floor(totaleSecondsGrav/60)%60;
+    const secondsGrav =Math.floor(totaleSecondsGrav%60);
+    console.log(`${daysGrav} days,${hoursGrav} hours,${minutesGrav} minutes,${secondsGrav} seconds, `);
+    var timeelGrav = document.getElementById("time-gravity");
+    timeelGrav.innerHTML=`${daysGrav} days ${hoursGrav} hours ${minutesGrav} minutes ${secondsGrav} seconds  `;
+    totaleSecondsGrav--;
+    if (totaleSecondsGrav<0) {
+        console.log("countdown has ended")
+        timeelGrav.innerHTML=`This Course Has Started`;
+
+    }
+    const daysCrystal = Math.floor(totaleSecondsCrystal/86400);
+    const hoursCrystal = Math.floor(totaleSecondsCrystal/3600)%24;
+    const minutesCrystal =Math.floor(totaleSecondsCrystal/60)%60;
+    const secondsCrystal =Math.floor(totaleSecondsCrystal%60);
+    console.log(`${daysCrystal} days,${hoursCrystal} hours,${minutesCrystal} minutes,${secondsCrystal} seconds, `);
+    var timeelCrystal = document.getElementById("time-crystal");
+    timeelCrystal.innerHTML=`${daysCrystal} days ${hoursCrystal} hours ${minutesCrystal} minutes ${secondsCrystal} seconds  `;
+    totaleSecondsCrystal--;
+    if (totaleSecondsCrystal<0) {
+        console.log("countdown has ended")
+        timeel.innerHTML=`This Course Has Started`;
+
+
 document.getElementById('searchButton').addEventListener('click',searchcourse);
 
 function searchcourse() {
@@ -269,6 +351,7 @@ function searchcourse() {
         courseDisplay.appendChild(courseitem);
 
     });
+
 
 }
 
