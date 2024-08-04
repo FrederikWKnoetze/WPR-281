@@ -10001,3 +10001,19 @@ h6,
 .testimonial-carousel .owl-nav .owl-prev:hover {
   background: #2878EB;
 }
+
+
+/* dom styling start*/
+
+#testsearch{
+  display: flex;
+  flex-wrap: wrap;
+}
+#coursesDisplay{
+  padding-left: 10rem;
+  flex: 50%;
+}
+#detailsDisplay{
+  padding-right: 10rem;
+  flex: 50%;
+}

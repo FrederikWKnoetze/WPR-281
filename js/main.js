@@ -190,14 +190,8 @@ function searchcourse() {
         course.title.toLowerCase().includes(input)??
         course.code.toLowerCase().includes(input)
     );
-    console.log(matchingcourses);
 
-    matchingcourses.forEach(element => {
-        console.log(element);
-    });
-
-
-    matchingcourses.foreach(course=>{
+    matchingcourses.forEach(course=>{
         var courseitem=document.createElement('div');
         courseitem.className='course-item';
         courseitem.innerHTML=`<strong>${course.title}</strong> (${course.code})<br>${course.description}`;
