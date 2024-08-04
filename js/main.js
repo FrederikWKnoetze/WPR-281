@@ -351,3 +351,34 @@ function temCourse(ftitle,fcode,fduration,fdescription,fdetails,fmodules,flectur
     this.completed=fcompleted;
 }
 
+
+function storeUserData(){
+const form = document.querySelector('form')
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const temp = new FormData(form)
+    const temp2 = Object.fromEntries(temp)
+
+    const json = JSON.stringify(temp2)
+    localStorage.setItem('form', json)
+
+    window.location.href = "feature.html"
+
+    
+})
+}
+
+function displayUserData(){
+    const json = localStorage.getItem('form')
+    const temp = JSON.parse(json)
+
+        const markup = `
+    <div>
+        <span>Welcome ${temp[0]} ${temp[1]}<span>
+    </div>
+        `
+    document.getElementById('result').innerHTML = markup
+
+}
+
