@@ -1,3 +1,62 @@
+document.addEventListener('DOMContentLoaded', () => {
+    loadCompletedModules();
+});
+
+function toggleAccordion(element) {
+    const content = element.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
+}
+
+function completeModule(moduleId) {
+    // Retrieve existing completed modules from localStorage or initialize an empty array
+    const completedModules = JSON.parse(localStorage.getItem('completedModules')) || [];
+    
+    // Check if the module is already marked as completed
+    if (!completedModules.includes(moduleId)) {
+        completedModules.push(moduleId);  // Add moduleId to the array
+        localStorage.setItem('completedModules', JSON.stringify(completedModules));  // Save to localStorage
+        updateCompletedModulesList();  // Update the list of completed modules on the page
+    }
+}
+
+function loadCompletedModules() {
+    // Remove this line if you do not want to clear all localStorage data
+    //localStorage.clear(); 
+
+    // Retrieve completed modules from localStorage
+    const completedModules = JSON.parse(localStorage.getItem('completedModules')) || [];
+
+    completedModules.forEach(moduleId => {
+        const element = document.getElementById(moduleId);
+        if (element) {
+            element.style.textDecoration = "line-through";  // Mark the module as completed
+        }
+    });
+
+    updateCompletedModulesList();  // Update the displayed list of completed modules
+}
+
+function updateCompletedModulesList() {
+    const completedModules = JSON.parse(localStorage.getItem('completedModules')) || [];
+    const completedModulesList = document.getElementById('completedModulesList');
+    completedModulesList.innerHTML = '';  // Clear existing list items
+
+    completedModules.forEach(moduleId => {
+        const element = document.getElementById(moduleId);
+        if (element) {
+            const moduleText = element.textContent;
+            const li = document.createElement('li');
+            li.textContent = moduleText;  // Add the module's text to the list
+            completedModulesList.appendChild(li);
+        }
+    });
+
+    console.log('Completed Modules List:', completedModules);
+}
 function toggleAccordion(element) {
     const content = element.nextElementSibling;
     if (content.style.display === "block") {
