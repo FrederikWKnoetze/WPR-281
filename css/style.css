@@ -232,8 +232,13 @@ button {
   margin: auto;
   border: 2px solid black;
   border-radius: 4px;
+  margin-bottom: 5px;
 }
-
+.Complete-Button{
+  color: Black;
+  background-color: #007bff;
+  margin: 2px;
+}
 
 .accordion-header {
   background-color: #007bff;
