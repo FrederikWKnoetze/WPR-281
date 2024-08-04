@@ -334,3 +334,20 @@ function updateCountdown() {
 }
 const intervalCoundown =setInterval(updateCountdown,1000);
 
+//Creating the courses
+//
+
+function temCourse(ftitle,fcode,fduration,fdescription,fdetails,fmodules,flecturer,fvenue,fguide,fvideo,fcompleted) {
+    this.title=ftitle;
+    this.code=fcode;
+    this.duration=fduration;
+    this.fdescription=fdescription;
+    this.details=fdetails;
+    this.modules=fmodules;
+    this.lecturer=flecturer;
+    this.venue=fvenue;
+    this.guide=fguide;
+    this.video=fvideo;
+    this.completed=fcompleted;
+}
+
