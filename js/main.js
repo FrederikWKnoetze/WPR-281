@@ -233,23 +233,23 @@ var courseGlintstone=new temCourse("Glintstone Scorecery","0002","72 Days","Glin
 ],"Sellen","Debate Parlour","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);
 arrcourses.push(courseGlintstone);
 
-var courseNight=new temCourse("Night Scorecery","0003","72 Days","Glintstone sorcery is about rocks","Glintstone sorcery is about magic rocks",  
+var courseNight=new temCourse("Night Scorecery","0003","72 Days","Night Scorcery is about ambushing enemies","Night Scorcery is about ambushing enemies",  
 ["Ambush Shard","Eternal Darkness","Night Comet","Night Maiden's Mist",
 "Night Shard","Unseen Blade","Unseen Form"
 ],"Gowry","Selia","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);
 arrcourses.push(courseNight);
 
-var courseCold=new temCourse("Cold Scorecery","0004","72 Days","Glintstone sorcery is about rocks","Glintstone sorcery is about magic rocks",  
-["Adula's Moonblade","Freezing Mist","Frozen Armament","Glintstone Icecrag","amor Ice Storm"],"Ranni","Ranni's Rise","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQe",false);      
+var courseCold=new temCourse("Cold Scorecery","0004","72 Days","Cold scorcery is about freezing things and people","Cold scorcery is about freezing things and people",  
+["Adula's Moonblade","Freezing Mist","Frozen Armament","Glintstone Icecrag","Zamor Ice Storm"],"Ranni","Ranni's Rise","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQe",false);      
 arrcourses.push(courseCold);
 
-var courseGravity=new temCourse("Gravity Scorecery","0005","72 Days","Glintstone sorcery is about rocks","Glintstone sorcery is about magic rocks",  
+var courseGravity=new temCourse("Gravity Scorecery","0005","72 Days","Gravity Scorcery is about throwing rocks","Gravity Scorcery is about throwing rocks",  
 ["Collapsing Stars","Gravity Well","Meteorite","Meteorite of Astel",
 "Rock Sling","Blades of Stone","Gravitational Missile"
 ],"Radahn","Redmane Castle","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);          
 arrcourses.push(courseGravity);
 
-var courseCrystalian=new temCourse("Crystalian Scorecery","0006","72 Days","Glintstone sorcery is about rocks","Glintstone sorcery is about magic rocks",  
+var courseCrystalian=new temCourse("Crystalian Scorecery","0006","72 Days","Crystalian scorcery if about shooting crystals","Crystalian scorcery if about shooting crystals",  
 ["Crystal Release","Crystal Torrent","Shattering Crystal"],"Miriel","Church of Vows","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);          
 arrcourses.push(courseCrystalian);
 
@@ -276,7 +276,7 @@ function searchcourse() {
     matchingcourses.forEach(course=>{
         var courseitem=document.createElement('div');
         courseitem.className='course-item';
-        courseitem.innerHTML=`<h3>${course.title}</h3> Code:(${course.code})<br>${course.description}`;
+        courseitem.innerHTML=`<h3>${course.title}(Click for Modules)</h3> Code: ${course.code}<br>Duration: ${course.duration}<br>${course.description}`;
         courseitem.addEventListener('click', () => {
             // Display modules for the selected course
             detailDisplay.innerHTML = `<h3>${course.title} Modules<br>Lecturer: ${course.lecturer}<br>Venue: ${course.venue}</h3>`;
@@ -288,11 +288,13 @@ function searchcourse() {
                 console.log(moduleItem);
                 detailDisplay.appendChild(moduleItem);
             });
+            
         });
         console.log(courseitem);
         courseDisplay.appendChild(courseitem);
 
     });
+
 
 
 }
