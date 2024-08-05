@@ -206,7 +206,7 @@ function temCourse(ftitle,fcode,fduration,fdescription,fdetails,fmodules,flectur
     this.title=ftitle;
     this.code=fcode;
     this.duration=fduration;
-    this.fdescription=fdescription;
+    this.description=fdescription;
     this.details=fdetails;
     this.modules=fmodules;
     this.lecturer=flecturer;
@@ -276,14 +276,15 @@ function searchcourse() {
     matchingcourses.forEach(course=>{
         var courseitem=document.createElement('div');
         courseitem.className='course-item';
-        courseitem.innerHTML=`<strong>${course.title}</strong> (${course.code})<br>${course.description}`;
+        courseitem.innerHTML=`<h3>${course.title}</h3> Code:(${course.code})<br>${course.description}`;
         courseitem.addEventListener('click', () => {
             // Display modules for the selected course
-            detailDisplay.innerHTML = `<h3>${course.title} Modules</h3>`;
+            detailDisplay.innerHTML = `<h3>${course.title} Modules<br>Lecturer: ${course.lecturer}<br>Venue: ${course.venue}</h3>`;
+
             course.modules.forEach(module => {
                 const moduleItem = document.createElement('div');
                 moduleItem.className = 'module-item';
-                moduleItem.innerHTML = `<strong>${module}</strong><br>Lecturer: ${course.lecturer}<br>Venue: ${course.venue}`;
+                moduleItem.innerHTML = `<strong>${module}</strong><br>Study Guide: ${course.guide}<br>Course Video Class: <a href="${course.video}">Click Here</a>`;
                 console.log(moduleItem);
                 detailDisplay.appendChild(moduleItem);
             });
