@@ -272,29 +272,33 @@ function searchcourse() {
         course.title.toLowerCase().includes(input)??
         course.code.toLowerCase().includes(input)
     );
-
-    matchingcourses.forEach(course=>{
-        var courseitem=document.createElement('div');
-        courseitem.className='course-item';
-        courseitem.innerHTML=`<h3>${course.title}(Click for Modules)</h3> Code: ${course.code}<br>Duration: ${course.duration}<br>${course.description}`;
-        courseitem.addEventListener('click', () => {
-            // Display modules for the selected course
-            detailDisplay.innerHTML = `<h3>${course.title} Modules<br>Lecturer: ${course.lecturer}<br>Venue: ${course.venue}</h3>`;
-
-            course.modules.forEach(module => {
-                const moduleItem = document.createElement('div');
-                moduleItem.className = 'module-item';
-                moduleItem.innerHTML = `<strong>${module}</strong><br>Study Guide: ${course.guide}<br>Course Video Class: <a href="${course.video}">Click Here</a>`;
-                console.log(moduleItem);
-                detailDisplay.appendChild(moduleItem);
+    if ((matchingcourses.length==0)??(matchingcourses==null)) {
+       alert('There are no courses matching this search');
+    } else {
+        matchingcourses.forEach(course=>{
+            var courseitem=document.createElement('div');
+            courseitem.className='course-item';
+            courseitem.innerHTML=`<h3>${course.title}(Click for Modules)</h3> Code: ${course.code}<br>Duration: ${course.duration}<br>${course.description}`;
+            courseitem.addEventListener('click', () => {
+                // Display modules for the selected course
+                detailDisplay.innerHTML = `<h3>${course.title} Modules<br>Lecturer: ${course.lecturer}<br>Venue: ${course.venue}</h3>`;
+    
+                course.modules.forEach(module => {
+                    const moduleItem = document.createElement('div');
+                    moduleItem.className = 'module-item';
+                    moduleItem.innerHTML = `<strong>${module}</strong><br>Study Guide: ${course.guide}<br>Course Video Class: <a href="${course.video}">Click Here</a>`;
+                    console.log(moduleItem);
+                    detailDisplay.appendChild(moduleItem);
+                });
+                
             });
-            
+            console.log(courseitem);
+            courseDisplay.appendChild(courseitem);
+    
         });
-        console.log(courseitem);
-        courseDisplay.appendChild(courseitem);
-
-    });
-
+    
+    }
+    
 
 
 }
