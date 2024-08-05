@@ -32,7 +32,7 @@ const minutesNight1 =Math.floor(totaleSecondsNight/60)%60;
 const secondsNight1 =Math.floor(totaleSecondsNight%60);
 console.log(`${daysNight1} days,${hoursNight1} hours,${minutesNight1} minutes,${secondsNight1} seconds, `);
 var timeelNight1 = document.getElementById("time-night");
-timeelNight1.innerHTML=`${daysNight1} days,${hoursNight1} hours,${minutesNight1} minutes,${secondsNight1} seconds, `;
+timeelNight1.innerHTML=`${daysNight1} days ${hoursNight1} hours ${minutesNight1} minutes ${secondsNight1} seconds`;
 if (totaleSecondsNight<0) {
     console.log("countdown has ended")
     timeelNight1.innerHTML=`This Course Has Started`;
@@ -42,9 +42,9 @@ const daysCaria1 = Math.floor(totaleSecondsCaria/86400);
 const hoursCaria1 = Math.floor(totaleSecondsCaria/3600)%24;
 const minutesCaria1 =Math.floor(totaleSecondsCaria/60)%60;
 const secondsCaria1 =Math.floor(totaleSecondsCaria%60);
-console.log(`${daysCaria1} days,${hoursCaria1} hours,${minutesCaria1} minutes,${secondsCaria1} seconds, `);
+console.log(`${daysCaria1} days ${hoursCaria1} hours ${minutesCaria1} minutes ${secondsCaria1} seconds `);
 var timeelCaria1 = document.getElementById("time-carian");
-timeelCaria1.innerHTML=`${daysCaria1} days,${hoursCaria1} hours,${minutesCaria1} minutes,${secondsCaria1} seconds, `;
+timeelCaria1.innerHTML=`${daysCaria1} days ${hoursCaria1} hours ${minutesCaria1} minutes ${secondsCaria1} seconds`;
 if (totaleSecondsCaria<0) {
     console.log("countdown has ended")
     timeelCaria1.innerHTML=`This Course Has Started`;
@@ -56,7 +56,7 @@ const minutesCold1 =Math.floor(totaleSecondsCold/60)%60;
 const secondsCold1 =Math.floor(totaleSecondsCold%60);
 console.log(`${daysCold1} days,${hoursCold1} hours,${minutesCold1} minutes,${secondsCold1} seconds, `);
 var timeelCold1 = document.getElementById("time-cold");
-timeelCold1.innerHTML=`${daysCold1} days,${hoursCold1} hours,${minutesCold1} minutes,${secondsCold1} seconds, `;
+timeelCold1.innerHTML=`${daysCold1} days ${hoursCold1} hours ${minutesCold1} minutes ${secondsCold1} seconds`;
 if (totaleSecondsCold<0) {
     console.log("countdown has ended")
     timeelCold1.innerHTML=`This Course Has Started`;
@@ -68,7 +68,7 @@ const minutesGlint1 =Math.floor(totaleSecondsGlint/60)%60;
 const secondsGlint1 =Math.floor(totaleSecondsGlint%60);
 console.log(`${daysGlint1} days,${hoursGlint1} hours,${minutesGlint1} minutes,${secondsGlint1} seconds, `);
 var timeelGlint1 = document.getElementById("time-glint");
-timeelGlint1.innerHTML=`${daysGlint1} days,${hoursGlint1} hours,${minutesGlint1} minutes,${secondsGlint1} seconds, `;
+timeelGlint1.innerHTML=`${daysGlint1} days ${hoursGlint1} hours ${minutesGlint1} minutes ${secondsGlint1} seconds`;
 if (totaleSecondsGlint<0) {
     console.log("countdown has ended")
     timeelGlint1.innerHTML=`This Course Has Started`;
@@ -80,7 +80,7 @@ const minutesGrav1 =Math.floor(totaleSecondsGrav/60)%60;
 const secondsGrav1 =Math.floor(totaleSecondsGrav%60);
 console.log(`${daysGrav1} days,${hoursGrav1} hours,${minutesGrav1} minutes,${secondsGrav1} seconds, `);
 var timeelGrav1 = document.getElementById("time-gravity");
-timeelGrav1.innerHTML=`${daysGrav1} days,${hoursGrav1} hours,${minutesGrav1} minutes,${secondsGrav1} seconds, `;
+timeelGrav1.innerHTML=`${daysGrav1} days ${hoursGrav1} hours ${minutesGrav1} minutes ${secondsGrav1} seconds`;
 if (totaleSecondsGrav<0) {
     console.log("countdown has ended")
     timeelGrav1.innerHTML=`This Course Has Started`;
@@ -92,7 +92,7 @@ const minutesCrystal1 =Math.floor(totaleSecondsCrystal/60)%60;
 const secondsCrystal1 =Math.floor(totaleSecondsCrystal%60);
 console.log(`${daysCrystal1} days,${hoursCrystal1} hours,${minutesCrystal1} minutes,${secondsCrystal1} seconds, `);
 var timeelCrystal1 = document.getElementById("time-crystal");
-timeelCrystal1.innerHTML=`${daysCrystal1} days,${hoursCrystal1} hours,${minutesCrystal1} minutes,${secondsCrystal1} seconds, `;
+timeelCrystal1.innerHTML=`${daysCrystal1} days ${hoursCrystal1} hours ${minutesCrystal1} minutes ${secondsCrystal1} seconds`;
 if (totaleSecondsCrystal<0) {
     console.log("countdown has ended")
     timeel1.innerHTML=`This Course Has Started`;
@@ -113,7 +113,7 @@ function updateCountdown() {
     const secondsNight =Math.floor(totaleSecondsNight%60);
     console.log(`${daysNight} days,${hoursNight} hours,${minutesNight} minutes,${secondsNight} seconds, `);
     var timeelNight = document.getElementById("time-night");
-    timeelNight.innerHTML=`${daysNight} days,${hoursNight} hours,${minutesNight} minutes,${secondsNight} seconds, `;
+    timeelNight.innerHTML=`${daysNight} days ${hoursNight} hours ${minutesNight} minutes ${secondsNight} seconds`;
     totaleSecondsNight--;
     if (totaleSecondsNight<0) {
         console.log("countdown has ended")
@@ -126,7 +126,7 @@ function updateCountdown() {
     const secondsCaria =Math.floor(totaleSecondsCaria%60);
     console.log(`${daysCaria} days,${hoursCaria} hours,${minutesCaria} minutes,${secondsCaria} seconds, `);
     var timeelCaria = document.getElementById("time-carian");
-    timeelCaria.innerHTML=`${daysCaria} days,${hoursCaria} hours,${minutesCaria} minutes,${secondsCaria} seconds, `;
+    timeelCaria.innerHTML=`${daysCaria} days ${hoursCaria} hours ${minutesCaria} minutes ${secondsCaria} seconds`;
     totaleSecondsCaria--;
     if (totaleSecondsCaria<0) {
         console.log("countdown has ended")
@@ -139,7 +139,7 @@ function updateCountdown() {
     const secondsCold =Math.floor(totaleSecondsCold%60);
     console.log(`${daysCold} days,${hoursCold} hours,${minutesCold} minutes,${secondsCold} seconds, `);
     var timeelCold = document.getElementById("time-cold");
-    timeelCold.innerHTML=`${daysCold} days,${hoursCold} hours,${minutesCold} minutes,${secondsCold} seconds, `;
+    timeelCold.innerHTML=`${daysCold} days ${hoursCold} hours ${minutesCold} minutes ${secondsCold} seconds`;
     totaleSecondsCold--;
     if (totaleSecondsCold<0) {
         console.log("countdown has ended")
@@ -150,9 +150,9 @@ function updateCountdown() {
     const hoursGlint = Math.floor(totaleSecondsGlint/3600)%24;
     const minutesGlint =Math.floor(totaleSecondsGlint/60)%60;
     const secondsGlint =Math.floor(totaleSecondsGlint%60);
-    console.log(`${daysGlint} days,${hoursGlint} hours,${minutesGlint} minutes,${secondsGlint} seconds, `);
+    console.log(`${daysGlint} days,${hoursGlint} hours,${minutesGlint} minutes,${secondsGlint} seconds`);
     var timeelGlint = document.getElementById("time-glint");
-    timeelGlint.innerHTML=`${daysGlint} days,${hoursGlint} hours,${minutesGlint} minutes,${secondsGlint} seconds, `;
+    timeelGlint.innerHTML=`${daysGlint} days ${hoursGlint} hours ${minutesGlint} minutes ${secondsGlint} seconds`;
     totaleSecondsGlint--;
     if (totaleSecondsGlint<0) {
         console.log("countdown has ended")
@@ -165,7 +165,7 @@ function updateCountdown() {
     const secondsGrav =Math.floor(totaleSecondsGrav%60);
     console.log(`${daysGrav} days,${hoursGrav} hours,${minutesGrav} minutes,${secondsGrav} seconds, `);
     var timeelGrav = document.getElementById("time-gravity");
-    timeelGrav.innerHTML=`${daysGrav} days,${hoursGrav} hours,${minutesGrav} minutes,${secondsGrav} seconds, `;
+    timeelGrav.innerHTML=`${daysGrav} days ${hoursGrav} hours ${minutesGrav} minutes ${secondsGrav} seconds`;
     totaleSecondsGrav--;
     if (totaleSecondsGrav<0) {
         console.log("countdown has ended")
@@ -176,9 +176,9 @@ function updateCountdown() {
     const hoursCrystal = Math.floor(totaleSecondsCrystal/3600)%24;
     const minutesCrystal =Math.floor(totaleSecondsCrystal/60)%60;
     const secondsCrystal =Math.floor(totaleSecondsCrystal%60);
-    console.log(`${daysCrystal} days,${hoursCrystal} hours,${minutesCrystal} minutes,${secondsCrystal} seconds, `);
+    console.log(`${daysCrystal} days,${hoursCrystal} hours,${minutesCrystal} minutes,${secondsCrystal} seconds,`);
     var timeelCrystal = document.getElementById("time-crystal");
-    timeelCrystal.innerHTML=`${daysCrystal} days,${hoursCrystal} hours,${minutesCrystal} minutes,${secondsCrystal} seconds, `;
+    timeelCrystal.innerHTML=`${daysCrystal} days ${hoursCrystal} hours ${minutesCrystal} minutes ${secondsCrystal} seconds`;
     totaleSecondsCrystal--;
     if (totaleSecondsCrystal<0) {
         console.log("countdown has ended")
