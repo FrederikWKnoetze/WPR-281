@@ -64,7 +64,7 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0" id="test67">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
             <a href="index.html" class="navbar-brand ml-lg-3">
                 <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>Raya Lucaria</h1>
@@ -135,7 +135,7 @@
                             <h1 class="display-4">Carian Sorcery</h1>
                         </div>
                         <img class="img-fluid rounded w-100 mb-4" src="img/carian.jpg" alt="Image">
-                        <p>Carian Sorcery is a specialized branch of magic associated with the Carian Royal Family and their loyal knights. These sorceries are characterized by their use of enchanted weaponry and defensive magic, reflecting the martial traditions and arcane knowledge of the Carian lineage.</p>
+                        <p id="testOut">Carian Sorcery is a specialized branch of magic associated with the Carian Royal Family and their loyal knights. These sorceries are characterized by their use of enchanted weaponry and defensive magic, reflecting the martial traditions and arcane knowledge of the Carian lineage.</p>
                         
                         <p>These sorceries blend physical and magical combat, making them versatile tools for both offensive and defensive strategies. Carian Sorceries often require investment in the Intelligence stat and taught by NPCs with connections to this prestigious lineage.
 
@@ -147,8 +147,9 @@
                         <div class="accordion-item">
                             <button class="accordion-header" onclick="toggleAccordion(this)">Module 1</button>
                             <div class="accordion-content">
+                                <br>
                                 <h5 id="module1">Carian Greatsword</h5>
-                                <p id="module1Output">
+                                <p>
                                     Conjures a magic greatsword and then delivers a sweeping blow. This sorcery can be cast repeatedly.
                                     Armed with this spell, sorcerers gain the strength of knights, their loyalty sworn to the moon.
                                 </p>
@@ -160,8 +161,9 @@
                         <div class="accordion-item">
                             <button class="accordion-header" onclick="toggleAccordion(this)">Module 2</button>
                             <div class="accordion-content">
+                                <br>
                                 <h5 id="module2">Carian Phalanx</h5>
-                                <p id="module2Output">
+                                <p>
                                     Creates a defensive arch of numerous magic glintblades overhead, which automatically attack nearby foes.
                                     This sorcery can be used cast while in motion. An enhanced version of the glintblade sorcery used by enchanted knights.
                                 </p>
@@ -311,7 +313,9 @@
                             </div>
                         </div>
                     </div>
+                    <button id="printBtn" onclick="funPrint()">Print</button>
                </div>
+               
                
                 <div class="col-lg-4 mt-5 mt-lg-0">
                     <div class="bg-primary mb-5 py-3">

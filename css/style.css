@@ -35,7 +35,30 @@
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-
+#printBtn{
+  height: 40px;
+  background-color: #007bff;
+  width: 120px;
+  margin-left: 300px;
+  color: white;
+  border-radius: 5px;
+}
+@media print {
+  body {
+    visibility: hidden;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 0%;
+  }
+  .accordion, .accordion * {
+    visibility: visible;
+    left: 0;
+    top: 0;
+  }
+  .accordion-content {
+    display: block !important; /* Ensure content is visible */
+  }
+}
 *,
 *::before,
 *::after {
@@ -232,7 +255,7 @@ button {
   margin: auto;
   border: 2px solid black;
   border-radius: 4px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .Complete-Button{
   color: Black;

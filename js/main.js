@@ -1,3 +1,6 @@
+function funPrint(){
+    print()
+}
 document.addEventListener('DOMContentLoaded', () => {
     loadCompletedModules();
 });
