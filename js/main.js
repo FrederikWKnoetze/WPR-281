@@ -413,3 +413,98 @@ function updateCountdown() {
     }
 }
 
+function updateProgressNight(){
+    let progress = localStorage.getItem('progress') || 0
+    progress = parseInt(progress) + Math.ceil(100/7)
+    if (progress > 100) progress = 100
+    localStorage.setItem('progress', progress)
+}
+
+function loadProgressNight(){
+
+    let progress = localStorage.getItem('progress') || 0;
+    document.getElementById('progress-bar-inner-1').style.width = progress + '%';
+    document.getElementById('progress-bar-inner-1').innerText = progress + '%';
+    console.log('Progress loaded: ' + progress + '%');
+
+}
+
+function updateProgressCarian(){
+    let progress1 = localStorage.getItem('progress1') || 0
+    progress1 = parseInt(progress1) + Math.ceil(100/12)
+    if (progress1 > 100) progress1 = 100
+    localStorage.setItem('progress1', progress1)
+}
+
+function loadProgressCarian(){
+
+    let progress1 = localStorage.getItem('progress1') || 0;
+    document.getElementById('progress-bar-inner-2').style.width = progress1 + '%';
+    document.getElementById('progress-bar-inner-2').innerText = progress1 + '%';
+    console.log('Progress loaded: ' + progress1 + '%');
+
+}
+
+function updateProgressCold(){
+    let progress2 = localStorage.getItem('progress2') || 0
+    progress2 = parseInt(progress2) + Math.ceil(100/5)
+    if (progress2 > 100) progress2 = 100
+    localStorage.setItem('progress2', progress2)
+}
+
+function loadProgressCold(){
+
+    let progress2 = localStorage.getItem('progress2') || 0;
+    document.getElementById('progress-bar-inner-3').style.width = progress2 + '%';
+    document.getElementById('progress-bar-inner-3').innerText = progress2 + '%';
+    console.log('Progress loaded: ' + progress2 + '%');
+
+}
+
+function updateProgressGlintstone(){
+    let progress3 = localStorage.getItem('progress3') || 0
+    progress3 = parseInt(progress3) + Math.ceil(100/20)
+    if (progress3 > 100) progress3 = 100
+    localStorage.setItem('progress3', progress3)
+}
+
+function loadProgressGlintstone(){
+
+    let progress3 = localStorage.getItem('progress3') || 0;
+    document.getElementById('progress-bar-inner-4').style.width = progress3 + '%';
+    document.getElementById('progress-bar-inner-4').innerText = progress3 + '%';
+    console.log('Progress loaded: ' + progress3 + '%');
+
+}
+
+function updateProgressGravity(){
+    let progress4 = localStorage.getItem('progress4') || 0
+    progress4 = parseInt(progress4) + Math.ceil(100/7)
+    if (progress4 > 100) progress4 = 100
+    localStorage.setItem('progress4', progress4)
+}
+
+function loadProgressGravity(){
+
+    let progress4 = localStorage.getItem('progress4') || 0;
+    document.getElementById('progress-bar-inner-5').style.width = progress4 + '%';
+    document.getElementById('progress-bar-inner-5').innerText = progress4 + '%';
+    console.log('Progress loaded: ' + progress4 + '%');
+
+}
+
+function updateProgressCrystalian(){
+    let progress5 = localStorage.getItem('progress5') || 0
+    progress5 = parseInt(progress5) + Math.ceil(100/3)
+    if (progress5 > 100) progress5 = 100
+    localStorage.setItem('progress5', progress5)
+}
+
+function loadProgressCrystalian(){
+
+    let progress5 = localStorage.getItem('progress5') || 0;
+    document.getElementById('progress-bar-inner-6').style.width = progress5 + '%';
+    document.getElementById('progress-bar-inner-6').innerText = progress5 + '%';
+    console.log('Progress loaded: ' + progress5 + '%');
+
+}
