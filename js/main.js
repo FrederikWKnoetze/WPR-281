@@ -260,8 +260,12 @@ arrcourses.push(courseCrystalian);
 //This is the function to update it every second
 //
 
+try {
+    document.getElementById('searchButton').addEventListener('click',searchcourse);
+} catch (err) {
+    
+}
 
-document.getElementById('searchButton').addEventListener('click',searchcourse);
 
 function searchcourse() {
     var input=document.getElementById('searchInput').value.toLowerCase();
