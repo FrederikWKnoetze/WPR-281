@@ -219,18 +219,116 @@ function temCourse(ftitle,fcode,fduration,fdescription,fdetails,fmodules,flectur
 var arrcourses=[];
 
 var courseCarian=new temCourse("Carian Scorecery","0001","72 Days","Carian scorcery is about creating weapons with magic","Carian scorcery is abour imbueing and creating waepons with magic",  
-["Carian Greatsword","Carian Phalanx","Carian Piercer"],"Renalla","Debate Hall","guide goes here","video link goes here",false);
-
+["Carian Greatsword","Carian Phalanx","Carian Piercer","Carian Retaliation","Carian Slicer","Glintblade Phalanx",
+"Greatblade Phalanx","Lucidity","Magic Downpour","Magic Glintblade ","Glintblade Trio","Miriam's Vanishing"],
+"Renalla","Grand Library","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);
 arrcourses.push(courseCarian);
 
 var courseGlintstone=new temCourse("Glintstone Scorecery","0002","72 Days","Glintstone sorcery is about rocks","Glintstone sorcery is about magic rocks",  
-["Cannon of Haima","Comet","Crystal Barrage"],"Sellen","Debate Hall","guide goes here","video link goes here",false);
-
+["Cannon of Haima","Comet","Crystal Barrage","Crystal Burst",
+"Gavel of Haima","Glintstone Arc","Glintstone Cometshard","Glintstone Pebble",
+"Glintstone Stars","Great Glintstone Shard","Rock Blaster","Scholar's Armament",
+"Scholar's Shield","Shard Spiral","CShatter Earth","Star Shower",
+"Starlight","Swift Glintstone Shard","Terra Magica","Thops's Barrier "
+],"Sellen","Debate Parlour","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);
 arrcourses.push(courseGlintstone);
+
+var courseNight=new temCourse("Night Scorecery","0003","72 Days","Glintstone sorcery is about rocks","Glintstone sorcery is about magic rocks",  
+["Ambush Shard","Eternal Darkness","Night Comet","Night Maiden's Mist",
+"Night Shard","Unseen Blade","Unseen Form"
+],"Gowry","Selia","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);
+arrcourses.push(courseNight);
+
+var courseCold=new temCourse("Cold Scorecery","0004","72 Days","Glintstone sorcery is about rocks","Glintstone sorcery is about magic rocks",  
+["Adula's Moonblade","Freezing Mist","Frozen Armament","Glintstone Icecrag","amor Ice Storm"],"Ranni","Ranni's Rise","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQe",false);      
+arrcourses.push(courseCold);
+
+var courseGravity=new temCourse("Gravity Scorecery","0005","72 Days","Glintstone sorcery is about rocks","Glintstone sorcery is about magic rocks",  
+["Collapsing Stars","Gravity Well","Meteorite","Meteorite of Astel",
+"Rock Sling","Blades of Stone","Gravitational Missile"
+],"Radahn","Redmane Castle","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);          
+arrcourses.push(courseGravity);
+
+var courseCrystalian=new temCourse("Crystalian Scorecery","0006","72 Days","Glintstone sorcery is about rocks","Glintstone sorcery is about magic rocks",  
+["Crystal Release","Crystal Torrent","Shattering Crystal"],"Miriel","Church of Vows","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);          
+arrcourses.push(courseCrystalian);
 
 
 //This is the function to update it every second
 //
+
+
+document.getElementById('searchButton').addEventListener('click',searchcourse);
+
+function searchcourse() {
+    var input=document.getElementById('searchInput').value.toLowerCase();
+    var courseDisplay=document.getElementById('coursesDisplay');
+    var detailDisplay=document.getElementById('detailsDisplay');
+
+    courseDisplay.innerHTML='';
+    detailDisplay.innerHTML='';
+
+    var matchingcourses = arrcourses.filter(course => 
+        course.title.toLowerCase().includes(input)??
+        course.code.toLowerCase().includes(input)
+    );
+
+    matchingcourses.forEach(course=>{
+        var courseitem=document.createElement('div');
+        courseitem.className='course-item';
+        courseitem.innerHTML=`<strong>${course.title}</strong> (${course.code})<br>${course.description}`;
+        courseitem.addEventListener('click', () => {
+            // Display modules for the selected course
+            detailDisplay.innerHTML = `<h3>${course.title} Modules</h3>`;
+            course.modules.forEach(module => {
+                const moduleItem = document.createElement('div');
+                moduleItem.className = 'module-item';
+                moduleItem.innerHTML = `<strong>${module}</strong><br>Lecturer: ${course.lecturer}<br>Venue: ${course.venue}`;
+                console.log(moduleItem);
+                detailDisplay.appendChild(moduleItem);
+            });
+        });
+        console.log(courseitem);
+        courseDisplay.appendChild(courseitem);
+
+    });
+
+
+}
+
+
+
+function storeUserData(){
+const form = document.querySelector('form')
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const temp = new FormData(form)
+    const temp2 = Object.fromEntries(temp)
+
+    const json = JSON.stringify(temp2)
+    localStorage.setItem('form', json)
+
+    window.location.href = "feature.html"
+
+    
+})
+}
+
+function displayUserData(){
+    const json = localStorage.getItem('form')
+    const temp = JSON.parse(json)
+
+        const markup = `
+    <div>
+        <span>Welcome ${temp[0]} ${temp[1]}<span>
+    </div>
+        `
+    document.getElementById('result').innerHTML = markup
+
+}
+
+//hkm het jy dit weet hier gesit pieter
 function updateCountdown() {
     //this is just a copy paste with name changes each time to update the time
     const daysNight = Math.floor(totaleSecondsNight/86400);
@@ -310,77 +408,5 @@ function updateCountdown() {
         console.log("countdown has ended")
         timeel.innerHTML=`This Course Has Started`;
     }
-}
-
-document.getElementById('searchButton').addEventListener('click',searchcourse);
-
-function searchcourse() {
-    var input=document.getElementById('searchInput').value.toLowerCase();
-    var courseDisplay=document.getElementById('coursesDisplay');
-    var detailDisplay=document.getElementById('detailsDisplay');
-
-    courseDisplay.innerHTML='';
-    detailDisplay.innerHTML='';
-
-    var matchingcourses = arrcourses.filter(course => 
-        course.title.toLowerCase().includes(input)??
-        course.code.toLowerCase().includes(input)
-    );
-
-    matchingcourses.forEach(course=>{
-        var courseitem=document.createElement('div');
-        courseitem.className='course-item';
-        courseitem.innerHTML=`<strong>${course.title}</strong> (${course.code})<br>${course.description}`;
-        courseitem.addEventListener('click', () => {
-            // Display modules for the selected course
-            detailDisplay.innerHTML = `<h3>${course.title} Modules</h3>`;
-            course.modules.forEach(module => {
-                const moduleItem = document.createElement('div');
-                moduleItem.className = 'module-item';
-                moduleItem.innerHTML = `<strong>${module}</strong><br>Lecturer: ${course.lecturer}<br>Venue: ${course.venue}`;
-                console.log(moduleItem);
-                detailDisplay.appendChild(moduleItem);
-            });
-        });
-        console.log(courseitem);
-        courseDisplay.appendChild(courseitem);
-
-    });
-
-
-}
-
-
-
-
-
-function storeUserData(){
-const form = document.querySelector('form')
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    const temp = new FormData(form)
-    const temp2 = Object.fromEntries(temp)
-
-    const json = JSON.stringify(temp2)
-    localStorage.setItem('form', json)
-
-    window.location.href = "feature.html"
-
-    
-})
-}
-
-function displayUserData(){
-    const json = localStorage.getItem('form')
-    const temp = JSON.parse(json)
-
-        const markup = `
-    <div>
-        <span>Welcome ${temp[0]} ${temp[1]}<span>
-    </div>
-        `
-    document.getElementById('result').innerHTML = markup
-
 }
 
