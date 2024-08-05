@@ -19,15 +19,13 @@ function completeModule(moduleId) {
     if (!completedModules.includes(moduleId)) {
         completedModules.push(moduleId);  // Add moduleId to the array
         localStorage.setItem('completedModules', JSON.stringify(completedModules));  // Save to localStorage
-        updateCompletedModulesList();  // Update the list of completed modules on the page
+        updateCompletedModulesList();  // Update the list of completed modules on the page if the element exists
     }
 }
 
 function loadCompletedModules() {
-    // Remove this line if you do not want to clear all localStorage data
-    //localStorage.clear(); 
-
     // Retrieve completed modules from localStorage
+    //localStorage.clear()
     const completedModules = JSON.parse(localStorage.getItem('completedModules')) || [];
 
     completedModules.forEach(moduleId => {
@@ -37,12 +35,17 @@ function loadCompletedModules() {
         }
     });
 
-    updateCompletedModulesList();  // Update the displayed list of completed modules
+    updateCompletedModulesList();  // Update the displayed list of completed modules if the element exists
 }
 
 function updateCompletedModulesList() {
-    const completedModules = JSON.parse(localStorage.getItem('completedModules')) || [];
     const completedModulesList = document.getElementById('completedModulesList');
+    if (!completedModulesList) {
+        //console.log('Element with ID "completedModulesList" not found. Skipping update.');
+        return;
+    }
+
+    const completedModules = JSON.parse(localStorage.getItem('completedModules')) || [];
     completedModulesList.innerHTML = '';  // Clear existing list items
 
     completedModules.forEach(moduleId => {
@@ -54,18 +57,7 @@ function updateCompletedModulesList() {
             completedModulesList.appendChild(li);
         }
     });
-
-    console.log('Completed Modules List:', completedModules);
 }
-function toggleAccordion(element) {
-    const content = element.nextElementSibling;
-    if (content.style.display === "block") {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
-    }
-}//content block displays elemens when the block is clicked
-
 (function ($) {
     "use strict";
     
