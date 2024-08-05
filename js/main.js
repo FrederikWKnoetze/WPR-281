@@ -293,7 +293,7 @@ function searchcourse() {
                 course.modules.forEach(module => {
                     const moduleItem = document.createElement('div');
                     moduleItem.className = 'module-item';
-                    moduleItem.innerHTML = `<strong>${module}</strong><br>Study Guide: ${course.guide}<br>Course Video Class: <a href="${course.video}">Click Here</a>`;
+                    moduleItem.innerHTML = `<strong>${module}</strong><br>Study Guide: <a href="${course.guide}">Click Here</a><br>Course Video Class: <a href="${course.video}">Click Here</a>`;
                     console.log(moduleItem);
                     detailDisplay.appendChild(moduleItem);
                 });
