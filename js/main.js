@@ -41,7 +41,7 @@ function loadCompletedModules() {
 function updateCompletedModulesList() {
     const completedModulesList = document.getElementById('completedModulesList');
     if (!completedModulesList) {
-        //console.log('Element with ID "completedModulesList" not found. Skipping update.');
+        console.log('Element with ID "completedModulesList" not found. Skipping update.');
         return;
     }
 
@@ -57,6 +57,8 @@ function updateCompletedModulesList() {
             completedModulesList.appendChild(li);
         }
     });
+
+    console.log('Completed Modules List:', completedModules);
 }
 (function ($) {
     "use strict";
