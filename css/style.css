@@ -267,7 +267,7 @@ button {
 }
 
 .accordion-header {
-  background-color: #2878EB;
+  background-color: #203354;
   padding: 15px;
   cursor: pointer;
   border: none;
@@ -10051,17 +10051,17 @@ h6,
 
 .progress-bar {
   width: 100%;
-  background-color: #f3f3f3;
+  background-color: white;
   border-radius: 25px;
   margin: 20px 0;
 }
 .progress-bar-inner {
   height: 30px;
   width: 0;
-  background-color: #4caf50;
+  background-color: #2878EB;
   border-radius: 25px;
   text-align: center;
-  color: white;
+  color: black;
   line-height: 30px;
 }
 
