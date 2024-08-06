@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main.js"></script>
+    <script src="js/SignIn.js"></script>
 </head>
 <body>
     <div class="row justify-content-center bg-image mx-0 mb-5">
@@ -28,22 +28,5 @@
             </div>
         </div>
     </div>
-    
-    <script>
-    function checkUserData(event) {
-        event.preventDefault();
-        
-        const email = document.getElementById('signin-email').value;
-        const storedUser = JSON.parse(localStorage.getItem('user'));
-        
-        if (storedUser && storedUser.email === email) {
-            alert('Sign in successful!');
-            // Redirect to courses or another page
-            window.location.href = 'course.html';
-        } else {
-            alert('User not found. Please sign up first.');
-        }
-    }
-    </script>
 </body>
 </html>
