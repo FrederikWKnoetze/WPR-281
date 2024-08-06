@@ -1,3 +1,53 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Add event listener to the signup form
+    const signupForm = document.getElementById('signup-form');
+    if (signupForm) {
+        signupForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const surname = document.getElementById('surname').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+            const course = document.getElementById('course').value;
+
+            const user = {
+                name,
+                surname,
+                email,
+                phone,
+                address,
+                course
+            };
+
+            localStorage.setItem('user', JSON.stringify(user));
+            alert('Sign up successful!');
+            window.location.href = 'signIn.html';
+        });
+    }
+
+    // Add event listener to the signin form
+    const signinForm = document.getElementById('signin-form');
+    if (signinForm) {
+        signinForm.addEventListener('submit', checkUserData);
+    }
+
+    function checkUserData(event) {
+        event.preventDefault();
+        
+        const email = document.getElementById('signin-email').value;
+        const storedUser = JSON.parse(localStorage.getItem('user'));
+        
+        if (storedUser && storedUser.email === email) {
+            alert('Sign in successful!');
+            // Redirect to courses or another page
+            window.location.href = 'course.html';
+        } else {
+            alert('User not found. Please sign up first.');
+        }
+    }
+});
 function funPrint(){
     print()
 }
@@ -352,7 +402,6 @@ function updateProgressNight(){
 }
 
 function loadProgressNight(){
-
     let progress = localStorage.getItem('progress') || 0;
     document.getElementById('progress-bar-inner-1').style.width = progress + '%';
     document.getElementById('progress-bar-inner-1').innerText = progress + '%';
@@ -368,7 +417,6 @@ function updateProgressCarian(){
 }
 
 function loadProgressCarian(){
-
     let progress1 = localStorage.getItem('progress1') || 0;
     document.getElementById('progress-bar-inner-2').style.width = progress1 + '%';
     document.getElementById('progress-bar-inner-2').innerText = progress1 + '%';

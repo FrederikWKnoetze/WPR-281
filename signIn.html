@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="row justify-content-center bg-image mx-0 mb-5">
+        <div class="col-lg-6 py-5">
+            <div class="bg-white p-5 my-5">
+                <h1 class="text-center mb-4">Sign In</h1>
+                <form onsubmit="checkUserData(event)">
+                    <div class="form-row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <input type="email" class="form-control bg-light border-0" placeholder="Your Email" id="signin-email" style="padding: 30px 20px;" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="col-sm-8">
+                            <button class="btn btn-primary btn-block" type="submit" style="height: 60px;">Sign In</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    function checkUserData(event) {
+        event.preventDefault();
+        
+        const email = document.getElementById('signin-email').value;
+        const storedUser = JSON.parse(localStorage.getItem('user'));
+        
+        if (storedUser && storedUser.email === email) {
+            alert('Sign in successful!');
+            // Redirect to courses or another page
+            window.location.href = 'course.html';
+        } else {
+            alert('User not found. Please sign up first.');
+        }
+    }
+    </script>
+</body>
+</html>
