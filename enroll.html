@@ -95,54 +95,55 @@
 
 
     <!-- Header Start -->
+ 
     
     <!-- Header End -->
 
-      <!-- Feature Start -->
+      <!-- form Start -->
       <div class="row justify-content-center bg-image mx-0 mb-5">
         <div class="col-lg-6 py-5">
             <div class="bg-white p-5 my-5">
                 <h1 class="text-center mb-4">Sign Up And Become A Student Now!</h1>
-                <form>
+                <form id="signup-form">
                     <div class="form-row justify-content-center">
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="padding: 30px 20px;" required pattern="[A-Za-z\s]+" minlength="2" maxlength="35">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name" id="name" style="padding: 30px 20px;" required pattern="[A-Za-z\s]+" minlength="2" maxlength="35">
                             </div>
                         </div>
                     </div>
                     <div class="form-row justify-content-center">
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Your Surname" style="padding: 30px 20px;" required pattern="[A-Za-z\s]+" minlength="2" maxlength="35">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Surname" id="surname" style="padding: 30px 20px;" required pattern="[A-Za-z\s]+" minlength="2" maxlength="35">
                             </div>
                         </div>
                     </div>
                     <div class="form-row justify-content-center">
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="padding: 30px 20px;" required>
+                                <input type="email" class="form-control bg-light border-0" placeholder="Your Email" id="email" style="padding: 30px 20px;" required>
                             </div>
                         </div>
                     </div>
                     <div class="form-row justify-content-center">
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <input type="tel" class="form-control bg-light border-0" placeholder="Your Phone Number" style="padding: 30px 20px;" required pattern="\+?\d{10,}">
+                                <input type="tel" class="form-control bg-light border-0" placeholder="Your Phone Number" id="phone" style="padding: 30px 20px;" required pattern="\+?\d{10,}">
                             </div>
                         </div>
                     </div>
                     <div class="form-row justify-content-center">
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <input type="text" class="form-control bg-light border-0" placeholder="Your Address" style="padding: 30px 20px;" required minlength="4" maxlength="40">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Address" id="address" style="padding: 30px 20px;" required minlength="4" maxlength="40">
                             </div>
                         </div>
                     </div>
                     <div class="form-row justify-content-center">
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <select class="custom-select bg-light border-0 px-3" style="height: 60px;" required>
+                                <select class="custom-select bg-light border-0 px-3" id="course" style="height: 60px;" required>
                                     <option value="" disabled selected>Select a course</option>
                                     <option value="1">Carian Sorceries</option>
                                     <option value="2">Glintstone Sorceries</option>
@@ -156,7 +157,7 @@
                     </div>
                     <div class="form-row justify-content-center">
                         <div class="col-sm-8">
-                            <button class="btn btn-primary btn-block" type="submit" style="height: 60px;" onclick="storeUserData()">Sign Up Now</button><!-- onlicks function should take you to courses for countdown after validations-->
+                            <button class="btn btn-primary btn-block" type="submit" style="height: 60px;">Sign Up Now</button>
                         </div>
                     </div>
                 </form>
