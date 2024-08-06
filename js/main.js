@@ -266,7 +266,7 @@ var arrcourses=[];
 var courseCarian=new temCourse("Carian Scorecery","0001","72 Days","Carian scorcery is about creating weapons with magic","Carian scorcery is abour imbueing and creating waepons with magic",  
 ["Carian Greatsword","Carian Phalanx","Carian Piercer","Carian Retaliation","Carian Slicer","Glintblade Phalanx",
 "Greatblade Phalanx","Lucidity","Magic Downpour","Magic Glintblade ","Glintblade Trio","Miriam's Vanishing"],
-"Renalla","Grand Library","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);
+"Renalla","Grand Library","Study Guides/Carian Sorcery in Elden Ring.pdf","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);
 arrcourses.push(courseCarian);
 
 var courseGlintstone=new temCourse("Glintstone Scorecery","0002","72 Days","Glintstone sorcery is about rocks","Glintstone sorcery is about magic rocks",  
@@ -275,27 +275,27 @@ var courseGlintstone=new temCourse("Glintstone Scorecery","0002","72 Days","Glin
 "Glintstone Stars","Great Glintstone Shard","Rock Blaster","Scholar's Armament",
 "Scholar's Shield","Shard Spiral","CShatter Earth","Star Shower",
 "Starlight","Swift Glintstone Shard","Terra Magica","Thops's Barrier "
-],"Sellen","Debate Parlour","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);
+],"Sellen","Debate Parlour","Study Guides/Glintstone Sorcery in Elden Ring.pdf","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);
 arrcourses.push(courseGlintstone);
 
 var courseNight=new temCourse("Night Scorecery","0003","72 Days","Night Scorcery is about ambushing enemies","Night Scorcery is about ambushing enemies",  
 ["Ambush Shard","Eternal Darkness","Night Comet","Night Maiden's Mist",
 "Night Shard","Unseen Blade","Unseen Form"
-],"Gowry","Selia","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);
+],"Gowry","Selia","Study Guides/Night Sorcery in Elden Ring.pdf","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);
 arrcourses.push(courseNight);
 
 var courseCold=new temCourse("Cold Scorecery","0004","72 Days","Cold scorcery is about freezing things and people","Cold scorcery is about freezing things and people",  
-["Adula's Moonblade","Freezing Mist","Frozen Armament","Glintstone Icecrag","Zamor Ice Storm"],"Ranni","Ranni's Rise","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQe",false);      
+["Adula's Moonblade","Freezing Mist","Frozen Armament","Glintstone Icecrag","Zamor Ice Storm"],"Ranni","Ranni's Rise","Study Guides/Cold Sorcery in Elden Ring.pdf","https://www.youtube.com/watch?v=cbWXHMVWYkQe",false);      
 arrcourses.push(courseCold);
 
 var courseGravity=new temCourse("Gravity Scorecery","0005","72 Days","Gravity Scorcery is about throwing rocks","Gravity Scorcery is about throwing rocks",  
 ["Collapsing Stars","Gravity Well","Meteorite","Meteorite of Astel",
 "Rock Sling","Blades of Stone","Gravitational Missile"
-],"Radahn","Redmane Castle","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);          
+],"Radahn","Redmane Castle","Study Guides/Gravity Sorcery in Elden Ring.pdf","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);          
 arrcourses.push(courseGravity);
 
 var courseCrystalian=new temCourse("Crystalian Scorecery","0006","72 Days","Crystalian scorcery if about shooting crystals","Crystalian scorcery if about shooting crystals",  
-["Crystal Release","Crystal Torrent","Shattering Crystal"],"Miriel","Church of Vows","guide goes here","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);          
+["Crystal Release","Crystal Torrent","Shattering Crystal"],"Miriel","Church of Vows","Study Guides/Crystalian Sorcery in Elden Ring.pdf","https://www.youtube.com/watch?v=cbWXHMVWYkQ",false);          
 arrcourses.push(courseCrystalian);
 
 
