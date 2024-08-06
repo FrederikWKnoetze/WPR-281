@@ -38,7 +38,7 @@
 #printBtn{
   align-self: center;
   height: 40px;
-  background-color: #007bff;
+  background-color: #2878EB;
   width: 120px;
   margin-left: 42%;
   color: white;
@@ -262,12 +262,12 @@ button {
 }
 .Complete-Button{
   color: Black;
-  background-color: #007bff;
+  background-color: #2878EB;
   margin: 2px;
 }
 
 .accordion-header {
-  background-color: #007bff;
+  background-color: #2878EB;
   padding: 15px;
   cursor: pointer;
   border: none;

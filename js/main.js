@@ -26,27 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'signIn.html';
         });
     }
-
-    // Add event listener to the signin form
-    const signinForm = document.getElementById('signin-form');
-    if (signinForm) {
-        signinForm.addEventListener('submit', checkUserData);
-    }
-
-    function checkUserData(event) {
-        event.preventDefault();
-        
-        const email = document.getElementById('signin-email').value;
-        const storedUser = JSON.parse(localStorage.getItem('user'));
-        
-        if (storedUser && storedUser.email === email) {
-            alert('Sign in successful!');
-            // Redirect to courses or another page
-            window.location.href = 'course.html';
-        } else {
-            alert('User not found. Please sign up first.');
-        }
-    }
 });
 function funPrint(){
    // print()
@@ -96,7 +75,7 @@ function loadCompletedModules() {
     completedModules.forEach(moduleId => {
         const element = document.getElementById(moduleId);
         if (element) {
-            element.style.textDecoration = "line-through";  // Mark the module as completed
+            //element.style.textDecoration = "line-through";  // Mark the module as completed
         }
     });
 
@@ -120,6 +99,7 @@ function updateCompletedModulesList() {
             const li = document.createElement('li');
             li.textContent = moduleText;  // Add the module's text to the list
             completedModulesList.appendChild(li);
+            element.style.textDecoration = "line-through";
         }
     });
 
