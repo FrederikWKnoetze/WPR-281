@@ -10064,3 +10064,7 @@ h6,
   color: white;
   line-height: 30px;
 }
+
+#completedModulesList{
+  color: white;
+}
