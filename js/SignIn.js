@@ -7,7 +7,7 @@ function checkUserData(event) {
     if (storedUser && storedUser.email === email) {
         alert('Sign in successful!');
         // Redirect to courses or another page
-        window.location.href = 'course.html';
+        window.location.href = 'studentCourses.html';
     } else {
         alert('User not found. Please sign up first.');
     }
