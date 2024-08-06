@@ -305,10 +305,22 @@ arrcourses.push(courseCrystalian);
 try {
     document.getElementById('searchButton').addEventListener('click',searchcourse);
 } catch (err) {
-    
+    console.log('Button not found');
 }
 
-
+try {
+    var searchinputtest= document.getElementById('searchInput');
+    searchinputtest.addEventListener('keypress',function(event){
+        if (event.key === "Enter") {
+            event.preventDefault();
+            searchcourse();
+          } 
+    });
+} catch (err) {
+    console.log('Search not found');
+}
+//SEARCH
+//
 function searchcourse() {
     var input=document.getElementById('searchInput').value.toLowerCase();
     var courseDisplay=document.getElementById('coursesDisplay');
@@ -348,6 +360,11 @@ function searchcourse() {
     
     }
     
+
+
+
+    //
+    //END SEARCH
 
 
 }
