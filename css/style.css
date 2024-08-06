@@ -36,29 +36,32 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 #printBtn{
+  align-self: center;
   height: 40px;
   background-color: #007bff;
   width: 120px;
-  margin-left: 300px;
+  margin-left: 42%;
   color: white;
   border-radius: 5px;
 }
+/*
+
+
+
+
+*/
+
 @media print {
-  body {
-    visibility: hidden;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    height: 0%;
-  }
-  .accordion, .accordion * {
-    visibility: visible;
-    left: 0;
+  
+  #printArea, #printArea *{
     top: 0;
-  }
-  .accordion-content {
-    display: block !important; /* Ensure content is visible */
+    left: 0;
+    visibility:visible;
+    display: block;
   }
 }
+
+
 *,
 *::before,
 *::after {

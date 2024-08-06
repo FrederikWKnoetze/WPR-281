@@ -49,7 +49,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 function funPrint(){
-    print()
+   // print()
+   var content=document.getElementById("printArea");
+   var originalcontent=document.body.innerHTML;
+
+   console.log(originalcontent);
+   console.log(content);
+    document.body.innerHTML='';
+   document.body.appendChild(content);
+   console.log(document.body);
+
+   window.print();
+   document.body.innerHTML=originalcontent;
+   
 }
 document.addEventListener('DOMContentLoaded', () => {
     loadCompletedModules();
