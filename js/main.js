@@ -502,3 +502,28 @@ function loadProgressCrystalian(){
     console.log('Progress loaded: ' + progress5 + '%');
 
 }
+
+// would need server side to store this and its a bit too late to set that up
+//
+// function storeMessage(){
+
+//     var namemes = document.getElementById('inputmesname');
+//     var emailmes = document.getElementById('inputmesemail');
+//     var subjectmes = document.getElementById('inputmessubject');
+//     var messagemes = document.getElementById('inputmesmessage');
+//     var finalmessage= namemes+' '+emailmes+'\n'+subjectmes+'\n'+messagemes+'\n'+'\n';
+
+//     const blob= new Blob(finalmessage,{type:'text/plain'});
+
+//     const a = document.createElement('a');
+//     a.href = URL.createObjectURL(blob);
+//     a.download = 'myfile.txt';
+
+    
+//     a.click();
+
+//     URL.revokeObjectURL(a.href);
+
+
+
+// };
